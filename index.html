@@ -1,131 +1,471 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jessica Dichakdjian — Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jessica Dichakdjian | Robotics & HRI</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Portfolio of Jessica Dichakdjian, MSc Robotics & Human–Robot Interaction engineer." />
 </head>
 <body>
-  <main class="wrap">
-    <header class="hero" role="banner" aria-label="Hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="float-blur blur-a" aria-hidden="true"></div>
-      <div class="float-blur blur-b" aria-hidden="true"></div>
-
-      <div class="profile" style="margin-left:18px; margin-right:18px;">
-        <div class="avatar" aria-hidden="false">
-          <img src="assets/avatar.jpg" alt="Portrait">
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#hero">JD</a>
+            </div>
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <div class="meta">
-          <h1>Jessica Dichakdjian</h1>
-          <p class="lead">Robotics and Mechatronics MSc student focused on Human-Robot Interaction, prototyping, and interactive systems.</p>
-          <div class="actions">
-            <button class="btn" id="hireBtn">Contact</button>
-            <a class="btn secondary" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
-          </div>
-          <nav class="nav" aria-label="Main navigation" style="margin-top:8px">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </div>
     </header>
 
-    <div class="grid">
-      <section>
-        <div class="card" id="about">
-          <h2>About</h2>
-          <p class="lead">I design and prototype human-centered robotic systems. I work with ROS, Unity, Python, and embedded controllers to iterate fast from idea to demo. I enjoy mixing simulation and hardware to close the sim-to-real gap.</p>
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="hero-kicker">Robotics & Human–Robot Interaction</p>
+                    <h1>Jessica Dichakdjian</h1>
+                    <p class="hero-subtitle">
+                        MSc student at Politecnico di Milano designing and building
+                        <span class="accent">assistive robotic hands, teleoperation systems</span>, and
+                        human–robot interaction experiences.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">View projects</a>
+                        <a href="#contact" class="btn ghost">Get in touch</a>
+                    </div>
+                    <div class="hero-meta">
+                        <span>MSc Automation & Control / Robotics</span>
+                        <span>Focus: HRI · XR · Continuum mechanisms</span>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-tag">Current focus</div>
+                    <h2>Sign language educational robotic hand</h2>
+                    <p>
+                        Designing a cable-driven continuum wrist and control architecture
+                        for a child-friendly sign language teaching robot.
+                    </p>
+                    <ul class="pill-list">
+                        <li>Continuum robotics</li>
+                        <li>CAD & 3D printing</li>
+                        <li>Embedded control</li>
+                    </ul>
+                    <div class="hero-links">
+                        <!-- TODO: replace # with real links -->
+                        <a href="#" class="text-link">View thesis (PDF)</a>
+                        <a href="#" class="text-link">GitHub repo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <h2>About</h2>
+                <div class="section-grid">
+                    <div>
+                        <p>
+                            I am a robotics engineer in training, currently completing my MSc at
+                            <strong>Politecnico di Milano</strong>, with a focus on
+                            <strong>Human–Robot Interaction (HRI)</strong> and assistive robotics.
+                            I enjoy working across the full stack: from mechanical design and modeling
+                            to control, teleoperation, and user-facing interfaces.
+                        </p>
+                        <p>
+                            My projects span <strong>sign language teaching robots</strong>,
+                            <strong>industrial manipulators</strong>,
+                            <strong>bio-inspired swimming robots</strong>,
+                            <strong>collaborative game-playing robots</strong>, and
+                            <strong>VR-based teleoperation</strong>.
+                            I aim to create systems that are not only technically robust but also
+                            intuitive and accessible for the people who use them.
+                        </p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <span class="label">Interests</span>
+                            <p>Assistive robotics, HRI, XR, collaborative robots, continuum mechanisms.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="label">Technologies</span>
+                            <p>ROS · Unity · Python · C/C++ · MATLAB/Simulink · SolidWorks · Arduino</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="label">Looking for</span>
+                            <p>Thesis / internship positions in HRI, assistive robotics, and robotic hands (EU/UK).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Selected projects</h2>
+                <p class="section-intro">
+                    A few projects that represent my work in robotic hands, human–robot interaction
+                    and teleoperation. I will continue updating these with more details, images and code.
+                </p>
+
+                <div class="cards-grid">
+                    <!-- Project 1 -->
+                    <article class="card">
+                        <div class="card-header">
+                            <h3>Sign language educational robotic hand</h3>
+                            <span class="badge">Thesis</span>
+                        </div>
+                        <p>
+                            Design and implementation of a cable-driven continuum wrist and robotic
+                            hand for teaching sign language to elementary school children. From CAD
+                            and mechanism design to control and prototype assembly.
+                        </p>
+                        <ul class="pill-list">
+                            <li>Continuum robotics</li>
+                            <li>CAD & 3D printing</li>
+                            <li>Embedded control</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="#" class="text-link">View project</a>
+                            <a href="#" class="text-link">Source code</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="card">
+                        <div class="card-header">
+                            <h3>VR teleoperation of Braccio robot</h3>
+                            <span class="badge">XR · HRI</span>
+                        </div>
+                        <p>
+                            Teleoperation system connecting a VR environment in Unity to a Braccio
+                            robotic arm via ROS and Arduino, enabling intuitive mapping of human
+                            motion to robot joint control.
+                        </p>
+                        <ul class="pill-list">
+                            <li>Unity</li>
+                            <li>ROS</li>
+                            <li>Teleoperation</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="#" class="text-link">View project</a>
+                            <a href="#" class="text-link">Source code</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="card">
+                        <div class="card-header">
+                            <h3>Collaborative brick-breaker robot</h3>
+                            <span class="badge">HRI</span>
+                        </div>
+                        <p>
+                            Game-like collaborative setup where a robotic assistive hand and a human
+                            play a brick-breaker game together, exploring shared control and engagement
+                            in human–robot collaboration.
+                        </p>
+                        <ul class="pill-list">
+                            <li>Collaborative robotics</li>
+                            <li>Unity</li>
+                            <li>Interaction design</li>
+                        </ul>
+                        <div class="card-links">
+                            <a href="#" class="text-link">View project</a>
+                            <a href="#" class="text-link">Source code</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE (tiles + modals) -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2>Internships & Experience</h2>
+                <p class="section-intro">
+                    Hands-on work in experimental systems, sensor testing, and human–system interfaces.
+                    Hover to preview, click <strong>Explore</strong> to see more details.
+                </p>
+
+                <div class="tiles-grid">
+                    <!-- Jybird -->
+                    <article class="tile" data-modal-target="#modal-jybird">
+                        <div class="tile-logo">
+                            <!-- Later replace with an <img> logo -->
+                            <span>Jybird</span>
+                        </div>
+                        <div class="tile-hover">
+                            <h3>Human–Robot Interface Developer</h3>
+                            <p>Built web interfaces in React, experience that now supports designing HRI/teleoperation UIs.</p>
+                            <button class="btn small" type="button">Explore</button>
+                        </div>
+                    </article>
+
+                    <!-- CERN -->
+                    <article class="tile" data-modal-target="#modal-cern">
+                        <div class="tile-logo">
+                            <span>CERN</span>
+                        </div>
+                        <div class="tile-hover">
+                            <h3>Experimental Systems & Data Analysis Intern</h3>
+                            <p>Experimental testing and data analysis on detector prototypes in a safety-critical environment.</p>
+                            <button class="btn small" type="button">Explore</button>
+                        </div>
+                    </article>
+
+                    <!-- Thermorex -->
+                    <article class="tile" data-modal-target="#modal-thermorex">
+                        <div class="tile-logo">
+                            <span>Thermorex</span>
+                        </div>
+                        <div class="tile-hover">
+                            <h3>Robotic Sensor Testing Intern</h3>
+                            <p>Sensor and control component testing in industrial conditions.</p>
+                            <button class="btn small" type="button">Explore</button>
+                        </div>
+                    </article>
+
+                    <!-- KASA -->
+                    <article class="tile" data-modal-target="#modal-kasa">
+                        <div class="tile-logo">
+                            <span>KASA</span>
+                        </div>
+                        <div class="tile-hover">
+                            <h3>Human-Centered Communication Assistant</h3>
+                            <p>Multilingual communication and support for diverse community members.</p>
+                            <button class="btn small" type="button">Explore</button>
+                        </div>
+                    </article>
+
+                    <!-- Kooyrigs -->
+                    <article class="tile" data-modal-target="#modal-kooyrigs">
+                        <div class="tile-logo">
+                            <span>Kooyrigs</span>
+                        </div>
+                        <div class="tile-hover">
+                            <h3>Community Outreach & Educational Support</h3>
+                            <p>Outreach activities with a focus on inclusive education and support.</p>
+                            <button class="btn small" type="button">Explore</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- MODALS -->
+            <div class="modal" id="modal-jybird">
+                <div class="modal-content">
+                    <button class="modal-close" type="button">&times;</button>
+                    <h3>Human–Robot Interface Developer (Front-End / React)</h3>
+                    <p class="modal-meta">Jybird Communications · [Dates]</p>
+                    <p>
+                        Developed and maintained web interfaces using React, focusing on clean information
+                        layout and responsiveness. Collaborated with designers and stakeholders to translate
+                        user needs into intuitive UI flows. This experience now supports my work on
+                        teleoperation dashboards and HRI interfaces.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-cern">
+                <div class="modal-content">
+                    <button class="modal-close" type="button">&times;</button>
+                    <h3>Experimental Systems & Data Analysis Intern (ATLAS RPC)</h3>
+                    <p class="modal-meta">CERN · Geneva · [Dates]</p>
+                    <p>
+                        Performed experimental testing on detector prototypes, including setup, calibration,
+                        and data analysis. Documented procedures and results and contributed to reliability
+                        discussions. The experience strengthened my skills in experimental design and
+                        working within safety-critical systems—relevant to validating robotic platforms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-thermorex">
+                <div class="modal-content">
+                    <button class="modal-close" type="button">&times;</button>
+                    <h3>Robotic Sensor Testing & Interaction Reliability Intern</h3>
+                    <p class="modal-meta">Thermorex CJSC · [Dates]</p>
+                    <p>
+                        Assisted in testing sensors and control components in industrial environments,
+                        troubleshooting hardware/software issues and documenting observations. Gained
+                        exposure to robustness and usability constraints for automated systems.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-kasa">
+                <div class="modal-content">
+                    <button class="modal-close" type="button">&times;</button>&times;
+                    <h3>Human-Centered Communication Assistant (Volunteer)</h3>
+                    <p class="modal-meta">KASA Fondation Humanitaire · [Dates]</p>
+                    <p>
+                        Supported multilingual communication and information exchange with visitors
+                        and community members. Learned to adapt explanations to different backgrounds,
+                        which informs my approach to designing intuitive, human-centered robotic systems.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal" id="modal-kooyrigs">
+                <div class="modal-content">
+                    <button class="modal-close" type="button">&times;</button>
+                    <h3>Community Outreach & Educational Support (Volunteer)</h3>
+                    <p class="modal-meta">Kooyrigs · [Dates]</p>
+                    <p>
+                        Contributed to outreach and educational initiatives supporting vulnerable communities.
+                        This reinforced my motivation to work on accessible and socially relevant technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Politecnico di Milano</h3>
+                        <p class="card-subtitle">MSc – Automation and Control / Robotics</p>
+                        <p class="card-meta">2023 – Present · Milan, Italy</p>
+                        <p>
+                            Focus on robotics, control, and Human–Robot Interaction. Relevant courses:
+                            Bio-inspired Robotics, Industrial Robotics, Collaborative Robotics, XR Applications,
+                            Control Systems.
+                        </p>
+                        <p><strong>Thesis:</strong> Mechanical design and programming of a sign language educational continuous robot.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>National Polytechnic University of Armenia</h3>
+                        <p class="card-subtitle">BSc – Mechatronics / Robotics</p>
+                        <p class="card-meta">2019 – 2023 · Yerevan, Armenia</p>
+                        <p>
+                            Foundations in mechanical design, electronics, and control. Final project on robotic
+                            hand design for sign language education, bridging mechanical engineering and assistive technology.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS (tiles) -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2>Skills</h2>
+                <p class="section-intro">
+                    A snapshot of the tools and technologies I use most often in robotics and Human–Robot Interaction.
+                </p>
+
+                <div class="skills-tiles">
+                    <article class="skill-card">
+                        <div class="skill-icon">🧮</div>
+                        <h3>C / C++ · Python · MATLAB</h3>
+                        <p>Low-level control, numerical computing, data analysis, and rapid prototyping for robotics.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🤖</div>
+                        <h3>ROS · Arduino · Embedded</h3>
+                        <p>Robot middleware, microcontrollers, and sensor/actuator integration for real robotic systems.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">📐</div>
+                        <h3>SolidWorks · CAD · 3D Printing</h3>
+                        <p>Mechanical design of robotic hands, continuum joints, and custom fixtures from concept to prototype.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🕶️</div>
+                        <h3>Unity · XR · Teleoperation</h3>
+                        <p>VR interfaces and teleoperation pipelines connecting human motion to robot control.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">📊</div>
+                        <h3>Control & Simulation</h3>
+                        <p>Modeling, kinematics & dynamics, control design and simulation using MATLAB/Simulink.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🤝</div>
+                        <h3>Human–Robot Interaction</h3>
+                        <p>Designing interaction flows, user-facing interfaces, and experiments for collaborative and assistive robots.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p class="section-intro">
+                    Open to thesis and internship opportunities in robotics, HRI, and assistive systems.
+                    Feel free to reach out about research collaborations, projects, or just to connect.
+                </p>
+                <div class="contact-grid">
+                    <div>
+                        <ul class="contact-list">
+                            <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/jess-dichakdjian" target="_blank">github.com/jess-dichakdjian</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jessica-dichakdjian" target="_blank">linkedin.com/in/jessica-dichakdjian</a></li>
+                            <li><strong>Location:</strong> Milan, Italy (open to relocation)</li>
+                        </ul>
+                    </div>
+                    <div class="contact-note">
+                        <p>
+                            This portfolio is a work in progress – I am actively adding more project details,
+                            images, and links to code repositories as I refine my work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <span>&copy; <span id="year"></span> Jessica Dichakdjian</span>
+            <span>Built with HTML &amp; CSS · Accent color: #206A73</span>
         </div>
+    </footer>
 
-        <div class="card" id="projects" style="margin-top:16px">
-          <h2>Selected Projects</h2>
-          <div class="projects">
-            <article class="project" tabindex="0" data-title="HRI Demo" data-desc="A Unity + ROS HRI demo that visualizes user interactions with a humanoid robot." data-media="video:assets/hri-demo.mp4">
-              <div class="thumb"><video muted loop playsinline><source src="assets/hri-thumb.mp4" type="video/mp4"></video></div>
-              <div class="proj-info">
-                <strong>HRI Interactive Demo</strong>
-                <div class="proj-meta muted">Unity • ROS • User studies • 2024</div>
-              </div>
-            </article>
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-            <article class="project" tabindex="0" data-title="Autonomy Stack" data-desc="Simulation-first autonomy pipeline with RL policies trained in high-fidelity sim." data-media="gif:assets/autonomy.gif">
-              <div class="thumb"><img src="assets/autonomy-thumb.jpg" alt=""></div>
-              <div class="proj-info">
-                <strong>Autonomy Stack (Sim-to-Real)</strong>
-                <div class="proj-meta muted">Isaac Sim • PyTorch • 2023</div>
-              </div>
-            </article>
+        // Modal logic
+        const tiles = document.querySelectorAll('[data-modal-target]');
+        const modals = document.querySelectorAll('.modal');
 
-            <article class="project" tabindex="0" data-title="Sensor Suite" data-desc="Custom sensor fusion pipeline for perception and localization with ROS integration." data-media="image:assets/sensor.jpg">
-              <div class="thumb"><img src="assets/sensor-thumb.jpg" alt=""></div>
-              <div class="proj-info">
-                <strong>Sensor Suite & Fusion</strong>
-                <div class="proj-meta muted">ROS • C++ • SLAM • 2022</div>
-              </div>
-            </article>
-          </div>
-        </div>
+        tiles.forEach(tile => {
+            tile.addEventListener('click', () => {
+                const target = tile.getAttribute('data-modal-target');
+                const modal = document.querySelector(target);
+                if (modal) {
+                    modal.classList.add('active');
+                }
+            });
+        });
 
-        <div class="card" id="experience" style="margin-top:16px">
-          <h2>Experience</h2>
-          <div style="margin-top:12px">
-            <div><strong>NVIDIA</strong> <span class="muted small"> — Robotics Systems Engineer • 2023–Present</span></div>
-            <div class="small muted" style="margin-top:8px">Worked on Isaac Sim, humanoid policy pipelines, and synthetic sensor models. Presented at GTC and SIGGRAPH.</div>
-          </div>
-        </div>
-      </section>
-
-      <aside>
-        <div class="card contact-card" id="contact">
-          <h2>Contact</h2>
-          <div class="line"><div class="small muted">Email</div><div class="small">jessydishakjian@gmail.com</div></div>
-          <div class="line"><div class="small muted">Phone</div><div class="small">+39 3514202953</div></div>
-          <div class="line"><div class="small muted">Location</div><div class="small">Milano, Italy</div></div>
-          <div style="margin-top:12px">
-            <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:16px">
-          <h2>Skills</h2>
-          <div style="margin-top:10px" class="skills">
-            <span class="skill">ROS</span>
-            <span class="skill">Unity</span>
-            <span class="skill">Python</span>
-            <span class="skill">C++</span>
-            <span class="skill">SolidWorks</span>
-            <span class="skill">MATLAB</span>
-            <span class="skill">Embedded</span>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:16px">
-          <h2>Education</h2>
-          <div class="small muted"><strong>Politecnico di Milano</strong> — MSc Robotics & Mechatronics (current)</div>
-          <div style="height:12px"></div>
-          <div class="small muted"><strong>National Polytechnic University of Armenia</strong> — BSc Mechatronics</div>
-        </div>
-      </aside>
-    </div>
-
-    <div class="footer">Built with HTML, CSS and minimal JS — replace assets in /assets to customize</div>
-  </main>
-
-  <div class="modal-back" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="modal" id="modalCard">
-      <button class="close" id="modalClose" aria-label="Close">&times;</button>
-      <h3 id="mTitle">Title</h3>
-      <p id="mDesc" class="muted small">Description</p>
-      <div id="mMedia" style="margin-top:12px"></div>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
+        modals.forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal') ||
+                    e.target.classList.contains('modal-close')) {
+                    modal.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

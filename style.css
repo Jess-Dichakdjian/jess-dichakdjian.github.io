@@ -33,7 +33,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -138,8 +138,8 @@ body {
 
 .hero-grid-centered {
     display: grid;
-    grid-template-columns: minmax(180px, 260px) minmax(0, 1fr) minmax(180px, 260px);
-    gap: 2rem;
+    grid-template-columns: 220px minmax(0, 1fr) 220px;
+    gap: 1.2rem; /* reduced from 2rem */
     align-items: center;
 }
 

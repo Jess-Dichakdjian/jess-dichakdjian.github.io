@@ -327,12 +327,10 @@ body {
 
 /* About */
 .about-title {
-    font-size: clamp(3.5rem, 6vw, 5rem); /* ~2x bigger */
+    font-size: 5rem;
     line-height: 1.05;
     letter-spacing: -0.03em;
     margin-bottom: 1.5rem;
-
-    /* ALIGN WITH TEXT */
     margin-left: 2.5rem;
 }
 
@@ -348,9 +346,6 @@ body {
     max-width: 860px;
 }
 
-.about-title {
-    margin-left: 0;
-}
 
 .about-photo-wrap {
     display: flex;

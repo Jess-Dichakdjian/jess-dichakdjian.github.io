@@ -327,7 +327,7 @@ body {
 
 /* About */
 .about-title {
-    font-size: 5rem;
+    font-size: 5rem !important;
     line-height: 1.05;
     letter-spacing: -0.03em;
     margin-bottom: 1.5rem;
@@ -364,7 +364,7 @@ body {
     border: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-soft);
     display: block;
-    transform: translateX(-20px);
+    transform: translate(-20px, -20px);
 }
 
 .about-highlights {

@@ -139,6 +139,17 @@ body {
     .hero-grid-centered {
         grid-template-columns: 1fr;
     }
+    .about-top {
+    grid-template-columns: minmax(0, 1fr);
+    }
+    
+    .about-photo-wrap {
+        justify-content: flex-start;
+    }
+    
+    .about-highlights-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
 .hero-grid-centered {
     display: grid;

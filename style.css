@@ -142,7 +142,7 @@ body {
 }
 .hero-grid-centered {
     display: grid;
-    grid-template-columns: 290px minmax(0, 1fr) 290px;
+    grid-template-columns: 330px minmax(0, 1fr) 330px;
     gap: 1rem; /* reduced from 2rem */
     align-items: center;
 }

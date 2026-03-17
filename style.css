@@ -374,7 +374,7 @@ body {
 }
 
 .about-highlights-row {
-    margin-top: 2rem;
+    margin-top: 0.75rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
@@ -392,9 +392,9 @@ body {
 .highlight-card .label {
     display: block;
     text-transform: uppercase;
-    font-size: 1.15rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     color: var(--accent);
     margin-bottom: 0.65rem;
     line-height: 1.2;

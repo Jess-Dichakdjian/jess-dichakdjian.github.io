@@ -146,7 +146,12 @@ body {
     .about-photo-wrap {
         justify-content: flex-start;
     }
-    
+    .about-title {
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+    }
     .about-highlights-row {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -405,13 +410,14 @@ body {
 }
 .about-top {
     display: grid;
-    grid-template-columns: minmax(0, 1.5fr) 320px;
-    gap: 2rem;
+    grid-template-columns: minmax(0, 1.2fr) 340px;
+    gap: 3rem;
     align-items: start;
 }
 
 .about-text {
-    max-width: 760px;
+    max-width: 860px;
+    padding-left: 2.5rem;
 }
 
 .about-photo-wrap {
@@ -441,23 +447,24 @@ body {
 .highlight-card .label {
     display: block;
     text-transform: uppercase;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
     color: var(--accent);
-    margin-bottom: 0.45rem;
+    margin-bottom: 0.65rem;
+    line-height: 1.2;
 }
 
 .highlight-card p {
     margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .highlight-card {
     background: #ffffff;
     border-radius: 0.9rem;
-    padding: 0.7rem 0.9rem;
+    padding: 1.15rem 1.1rem;
     border: 1px solid var(--border-subtle);
     font-size: 0.85rem;
     color: var(--muted);

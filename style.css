@@ -135,7 +135,11 @@ body {
 .hero {
     padding: 4.5rem 0 3.5rem;
 }
-
+@media (max-width: 1100px) {
+    .hero-grid-centered {
+        grid-template-columns: 1fr;
+    }
+}
 .hero-grid-centered {
     display: grid;
     grid-template-columns: 220px minmax(0, 1fr) 220px;

@@ -307,7 +307,7 @@ body {
     background: var(--bg-alt);
 }
 
-.section h2 {
+.section > h2:not(.about-title) {
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
     letter-spacing: -0.02em;
@@ -327,7 +327,7 @@ body {
 
 /* About */
 .about-title {
-    font-size: 80px;
+    font-size: 80px !important;
     line-height: 1.05;
     letter-spacing: -0.03em;
     margin-bottom: 1.5rem;

@@ -351,6 +351,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: -1.5rem; /* ⬅️ pulls image up */
+
 }
 
 .about-photo {

@@ -142,7 +142,7 @@ body {
 }
 .hero-grid-centered {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr) 260px;
+    grid-template-columns: 290px minmax(0, 1fr) 290px;
     gap: 1rem; /* reduced from 2rem */
     align-items: center;
 }
@@ -172,7 +172,7 @@ body {
 
 .hero-note {
     margin-top: 1rem;
-    font-size: 1.08rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--text);
     max-width: 34rem;

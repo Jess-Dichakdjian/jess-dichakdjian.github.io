@@ -392,6 +392,56 @@ body {
     flex-direction: column;
     gap: 0.75rem;
 }
+.about-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) 320px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.about-text {
+    max-width: 760px;
+}
+
+.about-photo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-soft);
+    display: block;
+}
+
+.about-highlights-row {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.highlight-card .label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 0.45rem;
+}
+
+.highlight-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
 
 .highlight-card {
     background: #ffffff;

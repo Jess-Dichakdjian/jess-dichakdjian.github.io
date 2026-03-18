@@ -326,6 +326,11 @@ body {
 }
 
 /* About */
+.about-title,
+.about-top {
+    position: relative;
+    top: 1rem;
+}
 .about-title {
     font-size: 3rem !important;
     line-height: 1.05;
@@ -351,8 +356,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: -1.5rem; /* ⬅️ pulls image up */
-
+    margin-top: 0;
 }
 
 .about-photo {
@@ -364,7 +368,7 @@ body {
     border: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-soft);
     display: block;
-    transform: translate(-20px, -60px);
+    transform: none;
 }
 
 .about-highlights {

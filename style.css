@@ -847,19 +847,18 @@ body {
     bottom: 0.35rem;
     right: 0.35rem;
 
-    font-size: 1.2rem;   /* ~2.5x bigger */
-    padding: 0.35rem 0.8rem;
+    font-size: 1.2rem;
+    padding: 0.45rem 1rem;
     border-radius: 999px;
 
     background: var(--accent-soft);    
     color: var(--accent);
-    font-weight: 550;
+    font-weight: 600;
     letter-spacing: 0.03em;
-        line-height: 1.1;
-
+    line-height: 1.1;
 
     backdrop-filter: blur(6px);
-    z-index: 5;
+    z-index: 6;
 }
 
 .card p {
@@ -1205,17 +1204,14 @@ body {
     right: 0.8rem;
     bottom: auto;
     left: auto;
-    font-size: 1.2rem;   /* ~2.5x bigger */
-    padding: 0.35rem 0.8rem;
-    border-radius: 999px;
 
-    font-weight: 550;
-    letter-spacing: 0.03em;
-        line-height: 1.1;
+    padding: 0.4rem 0.95rem;
+    font-size: 1.35rem;
+    line-height: 1.1;
 
 
     backdrop-filter: blur(6px);
-    z-index: 5;
+    z-index: 7;
     background: var(--accent-soft);
     color: var(--accent);
     }

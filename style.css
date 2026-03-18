@@ -873,6 +873,12 @@ body {
     backdrop-filter: blur(6px);
     z-index: 6;
 }
+.project-slide.is-active:hover .project-content > .badge {
+    width: auto;
+    max-width: max-content;
+    margin: 0;
+    text-align: center;
+}
 
 .card p {
     color: var(--muted);

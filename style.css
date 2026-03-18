@@ -829,17 +829,9 @@ body {
     font-size: 0.8rem;
 }
 
-.badge {
-    padding: 0.15rem 0.55rem;
-    border-radius: 999px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-}
 
-.badge-overlay {
+
+.badge {
     position: absolute;
     bottom: 1rem;
     right: 1rem;

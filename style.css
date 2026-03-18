@@ -511,7 +511,7 @@ body {
 }
 
 .project-slide {
-    flex: 0 0 min(48vw, 1120px);
+    flex: 0 0 min(48vw, 1080px);
     opacity: 0.45;
     transform: scale(0.92);
     transition: transform 0.35s ease, opacity 0.35s ease;
@@ -525,7 +525,7 @@ body {
 .project-card-horizontal {
     position: relative;
     display: grid;
-    grid-template-columns: 420px minmax(0, 260px);
+    grid-template-columns: 380px minmax(0, 240px);
     gap: 0.9rem;
     align-items: stretch;
     background: var(--card-bg);
@@ -533,7 +533,7 @@ body {
     padding: 1rem;
     border: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-soft);
-    min-height: 420px;
+    min-height: 400px;
     overflow: hidden;
 }
 
@@ -573,7 +573,7 @@ body {
 
 .project-content h3 {
     margin: 0.6rem 0 1rem;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     line-height: 1.1;
     letter-spacing: -0.03em;
 }
@@ -588,11 +588,11 @@ body {
 }
 
 .project-points li {
-    padding: 0.35rem 0.72rem;
+    padding: 0.45rem 0.9rem;
     border-radius: 999px;
     background: var(--accent-soft);
     color: var(--accent);
-    font-size: 0.78rem;
+    font-size: 1.45rem;
     line-height: 1.2;
 }
 
@@ -705,8 +705,12 @@ body {
 }
 
 .project-slide.is-active:hover .project-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     opacity: 0.3;
-    transform: scale(1.03);
+    transform: none;
 }
 
 .project-slide.is-active:hover .project-content {
@@ -833,6 +837,24 @@ body {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+}
+
+.badge-overlay {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    font-size: 1.6rem;   /* ~2.5x bigger */
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+
+    backdrop-filter: blur(6px);
+    z-index: 5;
 }
 
 .card p {

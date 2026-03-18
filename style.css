@@ -390,7 +390,7 @@ body {
     align-items: start;
     padding-left: 2.5rem;
     margin-top: 0.8rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1.2rem;
 }
 
 .about-text {
@@ -401,7 +401,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: -6rem;
+    margin-top: -3rem;
     margin-left: -2rem;
 }
 
@@ -511,7 +511,7 @@ body {
 }
 
 .project-slide {
-    flex: 0 0 min(88vw, 1400px);
+    flex: 0 0 min(76vw, 1120px);
     opacity: 0.45;
     transform: scale(0.92);
     transition: transform 0.35s ease, opacity 0.35s ease;
@@ -525,15 +525,15 @@ body {
 .project-card-horizontal {
     position: relative;
     display: grid;
-    grid-template-columns: 620px minmax(0, 320px);
-    gap: 1rem;
+    grid-template-columns: 420px minmax(0, 260px);
+    gap: 0.9rem;
     align-items: stretch;
     background: var(--card-bg);
     border-radius: 1.15rem;
-    padding: 1.1rem;
+    padding: 1rem;
     border: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-soft);
-    min-height: 620px;
+    min-height: 460px;
     overflow: hidden;
 }
 
@@ -710,12 +710,18 @@ body {
     position: absolute;
     inset: 0;
     z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     text-align: center;
-    padding: 3rem 4rem;
+    padding: 4.5rem 4rem 3.5rem;
     color: white;
+}
+
+.project-slide.is-active:hover .project-content > * {
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-slide.is-active:hover .project-content .card-header {
@@ -730,7 +736,7 @@ body {
 .project-slide.is-active:hover .project-content h3 {
     color: white;
     font-size: 2.4rem;
-    max-width: 12ch;
+    max-width: 20ch;
 }
 
 .project-slide.is-active:hover .badge {

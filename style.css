@@ -351,10 +351,13 @@ body {
     background: var(--bg-alt);
 }
 
-.section > h2:not(.about-title) {
-    font-size: 1.6rem;
+.section > h2 {
+    font-size: 3rem;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
     margin-bottom: 1.2rem;
-    letter-spacing: -0.02em;
+        margin-left: 2.5rem;
+
 }
 
 .section-intro {
@@ -373,14 +376,6 @@ body {
 /* About */
 #about .container {
     padding-top: 2rem;
-}
-
-.about-title {
-    font-size: 3rem !important;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    margin-bottom: 1.2rem;
-    margin-left: 2.5rem;
 }
 
 .about-top {
@@ -849,17 +844,19 @@ body {
 
 .project-card-horizontal .badge {
     position: absolute;
-    bottom: 1rem;
-    right: 0.5rem;
+    bottom: 0.35rem;
+    right: 0.35rem;
 
-    font-size: 1.3rem;   /* ~2.5x bigger */
-    padding: 0.5rem 1rem;
+    font-size: 1.2rem;   /* ~2.5x bigger */
+    padding: 0.35rem 0.8rem;
     border-radius: 999px;
 
     background: var(--accent-soft);    
     color: var(--accent);
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-weight: 550;
+    letter-spacing: 0.03em;
+        line-height: 1.1;
+
 
     backdrop-filter: blur(6px);
     z-index: 5;
@@ -1204,10 +1201,21 @@ body {
     }
 
     .project-slide.is-active:hover .badge {
-    top: 1.2rem;
-    right: 1.2rem;
+    top: 0.8rem;
+    right: 0.8rem;
     bottom: auto;
     left: auto;
+    font-size: 1.2rem;   /* ~2.5x bigger */
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+
+    font-weight: 550;
+    letter-spacing: 0.03em;
+        line-height: 1.1;
+
+
+    backdrop-filter: blur(6px);
+    z-index: 5;
     background: var(--accent-soft);
     color: var(--accent);
     }

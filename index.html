@@ -135,149 +135,187 @@
                     My work combines mechanical design, embedded systems, robot control, and interactive software.
                 </p>
 
-                <div class="cards-grid">
-                    <!-- Project 1 -->
-                    <article class="card project-card">
-                        <div class="card-media">
-                            <img src="images/Thesis_SignRobot.gif" alt="Sign language educational robotic hand prototype" />
-                            <div class="card-media-fade"></div>
-                        </div>
-                    
-                        <div class="project-card-content">
-                            <div class="card-header">
-                                <h3>Sign language educational robotic hand</h3>
-                                <span class="badge">Thesis</span>
-                            </div>
-                    
-                            <ul class="pill-list project-points">
-                                <li>Continuum wrist design</li>
-                                <li>Arduino</li>
-                                <li>Raspberry Pi</li>
-                                <li>Python</li>
-                                <li>3D printing</li>
-                                <li>Embedded control</li>
-                            </ul>
-                    
-                            <div class="project-hover-content">
-                                <p>
-                                    Assistive robotics prototype combining a programmable robotic hand with a
-                                    custom cable-driven continuum wrist designed for sign language teaching.
-                                    I designed the wrist from scratch, including calculations, CAD, 3D printing,
-                                    flexibility tuning, assembly, and embedded control.
-                                </p>
-                                <p>
-                                    The current prototype uses camera-based recognition to detect the letter
-                                    <strong>A</strong> on paper, then actuates the hand and wrist to perform the corresponding
-                                    sign language gesture. The interaction layer is still under development.
-                                </p>
-                    
-                                <div class="card-links">
-                                    <a href="#" class="text-link">View project</a>
-                                    <a href="#" class="text-link">Source code</a>
+                
+                <div class="projects-slider">
+                    <button class="slider-btn slider-btn-prev" type="button" aria-label="Previous project">‹</button>
+                
+                    <div class="projects-viewport">
+                        <div class="projects-track">
+                            <!-- Project 1 -->
+                            <article class="project-slide">
+                                <div class="project-card-horizontal">
+                                    <div class="project-image-wrap">
+                                        <img src="images/Thesis_SignRobot.gif" alt="Sign language educational robotic hand prototype" />
+                                    </div>
+                
+                                    <div class="project-content">
+                                        <div class="card-header">
+                                            <h3>Sign language educational robotic hand</h3>
+                                            <span class="badge">Thesis</span>
+                                        </div>
+                
+                                        <ul class="pill-list project-points">
+                                            <li>Continuum wrist design</li>
+                                            <li>Arduino</li>
+                                            <li>Raspberry Pi</li>
+                                            <li>Python</li>
+                                            <li>3D printing</li>
+                                            <li>Embedded control</li>
+                                        </ul>
+                
+                                        <div class="project-hover-content">
+                                            <p>
+                                                Assistive robotics prototype combining a programmable robotic hand with a
+                                                custom cable-driven continuum wrist designed for sign language teaching.
+                                                I designed the wrist from scratch, including calculations, CAD, 3D printing,
+                                                flexibility tuning, assembly, and embedded control.
+                                            </p>
+                                            <p>
+                                                The current prototype uses camera-based recognition to detect the letter
+                                                <strong>A</strong> on paper, then actuates the hand and wrist to perform the corresponding
+                                                sign language gesture. The interaction layer is still under development.
+                                            </p>
+                
+                                            <div class="card-links">
+                                                <a href="#" class="text-link">View project</a>
+                                                <a href="#" class="text-link">Source code</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </article>
+                
+                            <!-- Project 2 -->
+                            <article class="project-slide">
+                                <div class="project-card-horizontal">
+                                    <div class="project-image-wrap">
+                                        <img src="images/xr.gif" alt="Braccio operated by vr" />
+                                    </div>
+                
+                                    <div class="project-content">
+                                        <div class="card-header">
+                                            <h3>XR teleoperation of Braccio robot</h3>
+                                            <span class="badge">ROS · Unity</span>
+                                        </div>
+                
+                                        <ul class="pill-list project-points">
+                                            <li>Unity</li>
+                                            <li>ROS Noetic</li>
+                                            <li>MoveIt</li>
+                                            <li>URDF</li>
+                                            <li>RViz</li>
+                                            <li>Arduino</li>
+                                        </ul>
+                
+                                        <div class="project-hover-content">
+                                            <p>
+                                                Developed and evaluated an XR teleoperation pipeline for a Braccio robotic arm,
+                                                connecting Unity to ROS Noetic and Arduino for intuitive robot control.
+                                            </p>
+                                            <p>
+                                                The initial system used Unity, ROS–TCP Connector, URDF modeling, MoveIt,
+                                                RViz, rosserial, and Arduino-based actuation. After validating the ROS-based
+                                                architecture, I helped streamline the real-time loop by moving inverse
+                                                kinematics into Unity to improve responsiveness and reduce latency during teleoperation.
+                                            </p>
+                
+                                            <div class="card-links">
+                                                <a href="#" class="text-link">View project</a>
+                                                <a href="#" class="text-link">Source code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                
+                            <!-- Project 3 -->
+                            <article class="project-slide">
+                                <div class="project-card-horizontal">
+                                    <div class="project-image-wrap">
+                                        <img src="images/braccio.gif" alt="Braccio" />
+                                    </div>
+                
+                                    <div class="project-content">
+                                        <div class="card-header">
+                                            <h3>Rehabilitation exoskeleton with Brick Breaker exergame</h3>
+                                            <span class="badge">HRI · Rehab Robotics</span>
+                                        </div>
+                
+                                        <ul class="pill-list project-points">
+                                            <li>Unity</li>
+                                            <li>Admittance control</li>
+                                            <li>UDP communication</li>
+                                            <li>Arduino Nano 33 IoT</li>
+                                            <li>Rehabilitation robotics</li>
+                                        </ul>
+                
+                                        <div class="project-hover-content">
+                                            <p>
+                                                Developed a rehabilitation system for post-stroke upper-limb support using
+                                                a 1-DOF elbow exoskeleton integrated with a Unity-based Brick Breaker exergame.
+                                                The patient controls the paddle through voluntary elbow motion.
+                                            </p>
+                                            <p>
+                                                The system implements an assisted-as-needed strategy using admittance control,
+                                                real-time ball trajectory prediction, and wireless UDP communication between
+                                                Unity and the exoskeleton controller. The project is largely complete, with
+                                                ongoing refinement of the admittance behavior.
+                                            </p>
+                
+                                            <div class="card-links">
+                                                <a href="#" class="text-link">View project</a>
+                                                <a href="#" class="text-link">Report / code</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                
+                            <!-- Project 4 -->
+                            <article class="project-slide">
+                                <div class="project-card-horizontal">
+                                    <div class="project-image-wrap">
+                                        <img src="images/matlab.gif" alt="4-DOF robot for smart visor automation" />
+                                    </div>
+                
+                                    <div class="project-content">
+                                        <div class="card-header">
+                                            <h3>Industrial robot for smart visor automation</h3>
+                                            <span class="badge">Industrial Robotics</span>
+                                        </div>
+                
+                                        <ul class="pill-list project-points">
+                                            <li>SolidWorks</li>
+                                            <li>MATLAB</li>
+                                            <li>Simscape</li>
+                                            <li>Forward & inverse kinematics</li>
+                                            <li>Workspace analysis</li>
+                                            <li>Dynamics & torque analysis</li>
+                                        </ul>
+                
+                                        <div class="project-hover-content">
+                                            <p>
+                                                Designed and analyzed a 4-DOF collaborative robot for smart visor automation,
+                                                combining CAD development, kinematic modeling, workspace analysis, and dynamic evaluation.
+                                            </p>
+                                            <p>
+                                                The project included SolidWorks design, forward and inverse kinematics,
+                                                Jacobian-based manipulability analysis, MATLAB and Simscape modeling,
+                                                trajectory planning for two task profiles, and torque/payload analysis to support motor and transmission selection.
+                                            </p>
+                
+                                            <div class="card-links">
+                                                <a href="#" class="text-link">View project</a>
+                                                <a href="#" class="text-link">Report / slides</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="card">
-                        <div class="card-media">
-                            <img src="images/xr.gif" alt="Braccio operated by vr" />
-                            <div class="card-media-fade"></div>
-                        </div>                        
-                        <div class="card-header">
-                            <h3>XR teleoperation of Braccio robot</h3>
-                            <span class="badge">ROS · Unity</span>
-                        </div>
-                        <p>
-                            Developed and evaluated an XR teleoperation pipeline for a Braccio robotic arm,
-                            connecting Unity to ROS Noetic and Arduino for intuitive robot control.
-                        </p>
-                        <p>
-                            The initial system used Unity, ROS–TCP Connector, URDF modeling, MoveIt,
-                            RViz, rosserial, and Arduino-based actuation. After validating the ROS-based
-                            architecture, I helped streamline the real-time loop by moving inverse
-                            kinematics into Unity to improve responsiveness and reduce latency during teleoperation.
-                        </p>
-                        <ul class="pill-list">
-                            <li>Unity</li>
-                            <li>ROS Noetic</li>
-                            <li>MoveIt</li>
-                            <li>URDF</li>
-                            <li>RViz</li>
-                            <li>Arduino</li>
-                        </ul>
-                        <div class="card-links">
-                            <a href="#" class="text-link">View project</a>
-                            <a href="#" class="text-link">Source code</a>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="card">
-                        <div class="card-media">
-                            <img src="images/braccio.gif" alt="Braccio" />
-                            <div class="card-media-fade"></div>
-                        </div>    
-                        <div class="card-header">
-                            <h3>Rehabilitation exoskeleton with Brick Breaker exergame</h3>
-                            <span class="badge">HRI · Rehab Robotics</span>
-                        </div>
-                        <p>
-                            Developed a rehabilitation system for post-stroke upper-limb support using
-                            a 1-DOF elbow exoskeleton integrated with a Unity-based Brick Breaker exergame.
-                            The patient controls the paddle through voluntary elbow motion.
-                        </p>
-                        <p>
-                            The system implements an assisted-as-needed strategy using admittance control,
-                            real-time ball trajectory prediction, and wireless UDP communication between
-                            Unity and the exoskeleton controller. The project is largely complete, with
-                            ongoing refinement of the admittance behavior.
-                        </p>
-                        <ul class="pill-list">
-                            <li>Unity</li>
-                            <li>Admittance control</li>
-                            <li>UDP communication</li>
-                            <li>Arduino Nano 33 IoT</li>
-                            <li>Rehabilitation robotics</li>
-                        </ul>
-                        <div class="card-links">
-                            <a href="#" class="text-link">View project</a>
-                            <a href="#" class="text-link">Report / code</a>
-                        </div>
-                    </article>
-                    <!-- Project 4 -->
-                    <article class="card">
-                        <div class="card-media">
-                            <img src="images/matlab.gif" alt="4-DOF robot for smart visor automation" />
-                            <div class="card-media-fade"></div>
-                        </div>
-                        <div class="card-header">
-                            <h3>Industrial  robot for smart visor automation</h3>
-                            <span class="badge">Industrial Robotics</span>
-                        </div>
-                        <p>
-                            Designed and analyzed a 4-DOF collaborative robot for smart visor automation,
-                            combining CAD development, kinematic modeling, workspace analysis, and dynamic evaluation.
-                        </p>
-                        <p>
-                            The project included SolidWorks design, forward and inverse kinematics,
-                            Jacobian-based manipulability analysis, MATLAB and Simscape modeling,
-                            trajectory planning for two task profiles, and torque/payload analysis to support motor and transmission selection.
-                        </p>
-                        <ul class="pill-list">
-                            <li>SolidWorks</li>
-                            <li>MATLAB</li>
-                            <li>Simscape</li>
-                            <li>Forward & inverse kinematics</li>
-                            <li>Workspace analysis</li>
-                            <li>Dynamics & torque analysis</li>
-                        </ul>
-                        <div class="card-links">
-                            <a href="#" class="text-link">View project</a>
-                            <a href="#" class="text-link">Report / slides</a>
-                        </div>
-                    </article>
+                    </div>
+                
+                    <button class="slider-btn slider-btn-next" type="button" aria-label="Next project">›</button>
                 </div>
             </div>
         </section>
@@ -562,10 +600,10 @@
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-
+    
         const tiles = document.querySelectorAll("[data-modal-target]");
         const modals = document.querySelectorAll(".modal");
-
+    
         tiles.forEach(tile => {
             tile.addEventListener("click", () => {
                 const target = tile.getAttribute("data-modal-target");
@@ -575,7 +613,7 @@
                 }
             });
         });
-
+    
         modals.forEach(modal => {
             modal.addEventListener("click", (e) => {
                 if (
@@ -586,6 +624,50 @@
                 }
             });
         });
+    
+        /* Projects slider */
+        const track = document.querySelector(".projects-track");
+        const slides = Array.from(document.querySelectorAll(".project-slide"));
+        const prevBtn = document.querySelector(".slider-btn-prev");
+        const nextBtn = document.querySelector(".slider-btn-next");
+        const viewport = document.querySelector(".projects-viewport");
+    
+        let activeIndex = 1;
+    
+        if (slides.length && track && viewport && prevBtn && nextBtn) {
+            if (activeIndex >= slides.length) {
+                activeIndex = 0;
+            }
+    
+            function updateSlider() {
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle("is-active", index === activeIndex);
+                });
+    
+                const activeSlide = slides[activeIndex];
+                const viewportWidth = viewport.offsetWidth;
+                const slideLeft = activeSlide.offsetLeft;
+                const slideWidth = activeSlide.offsetWidth;
+    
+                const targetX = slideLeft - (viewportWidth / 2) + (slideWidth / 2);
+                track.style.transform = `translateX(${-targetX}px)`;
+            }
+    
+            prevBtn.addEventListener("click", () => {
+                activeIndex = (activeIndex - 1 + slides.length) % slides.length;
+                updateSlider();
+            });
+    
+            nextBtn.addEventListener("click", () => {
+                activeIndex = (activeIndex + 1) % slides.length;
+                updateSlider();
+            });
+    
+            window.addEventListener("resize", updateSlider);
+            window.addEventListener("load", updateSlider);
+    
+            updateSlider();
+        }
     </script>
 </body>
 </html>

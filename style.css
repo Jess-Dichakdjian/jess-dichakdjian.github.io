@@ -741,9 +741,9 @@ body {
 .timeline-item {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 90px minmax(0, 1fr);
-    margin-bottom: 2.2rem;
-    min-height: 120px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2.4rem;
+    align-items: center;
 }
 
 .timeline-item:last-child {
@@ -751,15 +751,17 @@ body {
 }
 
 .timeline-node {
-    grid-column: 2;
-    justify-self: center;
-    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 90px;
+    height: 90px;
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    justify-content: center;
     z-index: 3;
+    pointer-events: none;
 }
 
 .timeline-logo {
@@ -792,21 +794,19 @@ body {
     padding: 1.2rem 1.25rem 1.15rem;
     box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
     width: 100%;
-    align-self: center;   /* important */
+    max-width: 760px;
 }
 
 .timeline-item.left .timeline-card {
     grid-column: 1;
-    justify-self: end;
-    align-self: center;   /* important */
-    margin-right: 1.4rem;
+    justify-self: stretch;
+    margin-right: calc(45px + 1.4rem);
 }
 
 .timeline-item.right .timeline-card {
-    grid-column: 3;
-    justify-self: start;
-    align-self: center;   /* important */
-    margin-left: 1.4rem;
+    grid-column: 2;
+    justify-self: stretch;
+    margin-left: calc(45px + 1.4rem);
 }
 
 .timeline-item.left .timeline-card::after,
@@ -876,22 +876,17 @@ body {
     }
 
     .timeline-item {
-        display: grid;
-        grid-template-columns: 68px 1fr;
+        display: block;
+        padding-left: 68px;
         margin-bottom: 1.5rem;
-        min-height: auto;
     }
 
     .timeline-node {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        grid-column: 1;
+        left: 34px;
+        top: 2rem;
+        transform: translate(-50%, 0);
         width: 68px;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-top: 0.35rem;
+        height: 68px;
     }
 
     .timeline-logo {
@@ -901,10 +896,8 @@ body {
 
     .timeline-item.left .timeline-card,
     .timeline-item.right .timeline-card {
-        grid-column: 2;
-        justify-self: stretch;
-        max-width: none;
         margin: 0 0 0 0.8rem;
+        max-width: none;
     }
 
     .timeline-item.left .timeline-card::after,

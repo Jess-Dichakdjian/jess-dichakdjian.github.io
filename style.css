@@ -40,7 +40,10 @@ body {
 
 /* General media blocks */
 .tile .card-media {
-    position: relative;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    
     width: 100%;
     height: 100%;
     margin: 0;
@@ -56,7 +59,7 @@ body {
 .tile .card-media img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     padding: 1.2rem;
     display: block;
@@ -791,15 +794,14 @@ body {
 
 .tile {
     position: relative;
-    display: grid;
-    grid-template-columns: 160px 1fr; /* image | content */
     border-radius: 1.2rem;
     overflow: hidden;
     background: #ffffff;
     border: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-soft);
     cursor: pointer;
-    min-height: 160px;
+
+    aspect-ratio: 16 / 10; /* 🔥 THIS is the key */
 }
 
 .tile-logo {

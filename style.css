@@ -718,6 +718,7 @@ body {
     transform: translateY(-1px);
     border-color: var(--accent);
 }
+
 /* ===== EDUCATION & CERTIFICATIONS TIMELINE ===== */
 
 .timeline {
@@ -740,9 +741,9 @@ body {
 .timeline-item {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 90px 1fr;
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr) 90px minmax(0, 1fr);
     margin-bottom: 2.2rem;
+    min-height: 120px;
 }
 
 .timeline-item:last-child {
@@ -753,7 +754,12 @@ body {
     grid-column: 2;
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    transform: translate(-50%, -50%);
     z-index: 3;
 }
 
@@ -768,12 +774,14 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .timeline-logo img {
     width: 72%;
     height: 72%;
     object-fit: contain;
+    object-position: center;
     display: block;
 }
 
@@ -784,17 +792,19 @@ body {
     border-radius: 1.1rem;
     padding: 1.2rem 1.25rem 1.15rem;
     box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+    width: 100%;
+    max-width: 760px;
 }
 
 .timeline-item.left .timeline-card {
     grid-column: 1;
-    justify-self: end;
+    justify-self: stretch;
     margin-right: 1.4rem;
 }
 
 .timeline-item.right .timeline-card {
     grid-column: 3;
-    justify-self: start;
+    justify-self: stretch;
     margin-left: 1.4rem;
 }
 
@@ -808,11 +818,11 @@ body {
     background: #ffffff;
     border-top: 1px solid var(--border-subtle);
     border-right: 1px solid var(--border-subtle);
-    transform: translateY(-50%) rotate(45deg);
 }
 
 .timeline-item.left .timeline-card::after {
     right: -8px;
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .timeline-item.right .timeline-card::after {
@@ -856,7 +866,7 @@ body {
     margin-top: 0.75rem;
 }
 
-/* ===== RESPONSIVE: line moves left, all cards to the right ===== */
+/* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
     .timeline::before {
@@ -865,14 +875,21 @@ body {
     }
 
     .timeline-item {
+        display: grid;
         grid-template-columns: 68px 1fr;
-        align-items: start;
         margin-bottom: 1.5rem;
+        min-height: auto;
     }
 
     .timeline-node {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
         grid-column: 1;
+        width: 68px;
         justify-content: flex-start;
+        align-items: flex-start;
         padding-top: 0.35rem;
     }
 
@@ -916,6 +933,7 @@ body {
         font-size: 0.84rem;
     }
 }
+
 /* Cards grid */
 .cards-grid {
     margin-top: 1.75rem;

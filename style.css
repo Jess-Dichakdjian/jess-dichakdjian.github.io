@@ -779,24 +779,25 @@ body {
 
 .timeline-card {
     position: relative;
+    width: 100%;
+    max-width: 520px;
     background: #ffffff;
     border: 1px solid var(--border-subtle);
     border-radius: 1.1rem;
     padding: 1.2rem 1.25rem 1.15rem;
     box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
-    max-width: 520px;
 }
 
 .timeline-item.left .timeline-card {
     grid-column: 1;
     justify-self: end;
-    margin-right: 0.75rem;
+    margin-right: 1.4rem;
 }
 
 .timeline-item.right .timeline-card {
     grid-column: 3;
     justify-self: start;
-    margin-left: 0.75rem;
+    margin-left: 1.4rem;
 }
 
 .timeline-item.left .timeline-card::after,
@@ -1231,9 +1232,28 @@ body {
     text-decoration: underline;
 }
 
+/* RIGHT */
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* GIF */
+.contact-gif {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* NOTE under GIF */
 .contact-note {
-    font-size: 0.88rem;
+    text-align: center;
+    font-size: 0.95rem;
     color: var(--muted);
+    line-height: 1.6;
 }
 
 /* Modals */

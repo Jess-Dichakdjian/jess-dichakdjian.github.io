@@ -1221,6 +1221,8 @@ body {
     margin: 0;
     font-size: 0.9rem;
     color: var(--muted);
+    margin-top: 1rem;
+    margin-left:4rem;
 }
 
 .contact-list a {
@@ -1243,7 +1245,7 @@ body {
 /* GIF */
 .contact-gif {
     width: 100%;
-    max-width: 260px;
+    max-width: 400px;
     height: auto;
     object-fit: contain;
 }

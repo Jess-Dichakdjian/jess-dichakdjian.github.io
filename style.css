@@ -801,7 +801,7 @@ body {
     box-shadow: var(--shadow-soft);
     cursor: pointer;
 
-    aspect-ratio: 16 / 10; /* 🔥 THIS is the key */
+    aspect-ratio: 5 / 4;
 }
 
 .tile-logo {

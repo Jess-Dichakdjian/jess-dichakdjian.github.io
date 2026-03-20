@@ -742,7 +742,6 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: minmax(0, 1fr) 90px minmax(0, 1fr);
-    align-items: center;
     margin-bottom: 2.2rem;
     min-height: 120px;
 }
@@ -755,12 +754,12 @@ body {
     grid-column: 2;
     justify-self: center;
     align-self: center;
-    position: relative;
-    z-index: 3;
     width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 3;
 }
 
 .timeline-logo {
@@ -793,18 +792,20 @@ body {
     padding: 1.2rem 1.25rem 1.15rem;
     box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
     width: 100%;
-    max-width: 760px;
+    align-self: center;   /* important */
 }
 
 .timeline-item.left .timeline-card {
     grid-column: 1;
-    justify-self: stretch;
+    justify-self: end;
+    align-self: center;   /* important */
     margin-right: 1.4rem;
 }
 
 .timeline-item.right .timeline-card {
     grid-column: 3;
-    justify-self: stretch;
+    justify-self: start;
+    align-self: center;   /* important */
     margin-left: 1.4rem;
 }
 

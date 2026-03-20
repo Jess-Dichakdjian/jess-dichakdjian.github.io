@@ -1139,26 +1139,7 @@ body {
     box-shadow: 0 0 0 4px rgba(32, 106, 115, 0.10), 0 8px 22px rgba(15, 23, 42, 0.06);
 }
 
-@media (max-width: 1100px) {
-    .skills-flip-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
 
-@media (max-width: 700px) {
-    .skills-flip-grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .skill-flip-card,
-    .skill-flip-inner {
-        min-height: 230px;
-    }
-
-    .skill-flip-face {
-        padding: 1.25rem 1.15rem;
-    }
-}
 
 /* Contact */
 .contact-grid {
@@ -1321,6 +1302,10 @@ body {
 
     .project-content h3 {
         font-size: 1.9rem;
+    }
+    
+    .skills-flip-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -1536,7 +1521,20 @@ body {
     }
 }
 
+@media (max-width: 700px) {
+    .skills-flip-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
 
+    .skill-flip-card,
+    .skill-flip-inner {
+        min-height: 230px;
+    }
+
+    .skill-flip-face {
+        padding: 1.25rem 1.15rem;
+    }
+}
 @media (max-width: 600px) {
     .hero {
         padding-top: 3.4rem;

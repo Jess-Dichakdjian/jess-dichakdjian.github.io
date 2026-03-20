@@ -7,7 +7,7 @@
     --accent: #206A73;
     --accent-soft: rgba(32, 106, 115, 0.08);
     --border-subtle: #e1e5ea;
-    --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.08);
+    --shadow-soft: 0 8px 22px rgba(15, 23, 42, 0.06);
     --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
         "Segoe UI", sans-serif;
 }
@@ -43,18 +43,23 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    aspect-ratio: 4 / 5; /* 🔥 key part */
     margin: 0;
     border-radius: 0;
     overflow: hidden;
-    background: #fff;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tile .card-media img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* keeps logos intact */
-    padding: 0.8rem;     /* balances whitespace */
+    object-fit: contain;
+    object-position: center;
+    padding: 1.2rem;
+    display: block;
 }
 
 .card-media-fade {
@@ -62,12 +67,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 35%;
+    height: 30%;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.4) 40%,
-        rgba(0, 0, 0, 0.75) 100%
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.18) 55%,
+        rgba(15, 23, 42, 0.10) 100%
     );
     pointer-events: none;
 }

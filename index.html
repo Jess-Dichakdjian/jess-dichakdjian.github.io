@@ -143,9 +143,10 @@
                             <!-- Project 1 -->
                             <article class="project-slide">
                                 <div class="project-card-horizontal">
+                                    <span class="badge project-badge">Thesis</span>
                                     <div class="project-image-wrap">
                                         <img src="images/Thesis_SignRobot.gif" alt="Sign language educational robotic hand prototype" />
-                                        <span class="badge project-badge">Thesis</span>
+                                        
                                     </div>
         
                                     <div class="project-content">
@@ -187,14 +188,14 @@
                             <!-- Project 2 -->
                             <article class="project-slide">
                                 <div class="project-card-horizontal">
+                                    <span class="badge project-badge">ROS · Unity</span>
                                     <div class="project-image-wrap">
                                         <img src="images/xr.gif" alt="Braccio operated by vr" />
-                                        <span class="badge project-badge">ROS · Unity</span>
                                     </div>
         
                                     <div class="project-content">
                                         <div class="card-header">
-                                            <h3>XR teleoperation of Braccio robot</h3>
+                                            <h3>XR Teleoperation of Braccio robot</h3>
                                         </div>
         
                                         <ul class="pill-list project-points">
@@ -230,9 +231,10 @@
                             <!-- Project 3 -->
                             <article class="project-slide">
                                 <div class="project-card-horizontal">
+                                    <span class="badge project-badge">HRI · Rehab Robotics</span>
                                     <div class="project-image-wrap">
                                         <img src="images/braccio.gif" alt="Braccio rehabilitation project" />
-                                        <span class="badge project-badge">HRI · Rehab Robotics</span>
+                                        
                                     </div>
         
                                     <div class="project-content">
@@ -273,9 +275,9 @@
                             <!-- Project 4 -->
                             <article class="project-slide">
                                 <div class="project-card-horizontal">
+                                    <span class="badge project-badge">Industrial Robotics</span>
                                     <div class="project-image-wrap">
                                         <img src="images/matlab.gif" alt="4-DOF robot for smart visor automation" />
-                                        <span class="badge project-badge">Industrial Robotics</span>
                                     </div>
         
                                     <div class="project-content">
@@ -630,7 +632,7 @@
         const nextBtn = document.querySelector(".slider-btn-next");
         const viewport = document.querySelector(".projects-viewport");
     
-        let activeIndex = 1;
+        let activeIndex = 0;
     
         if (slides.length && track && viewport && prevBtn && nextBtn) {
             if (activeIndex >= slides.length) {

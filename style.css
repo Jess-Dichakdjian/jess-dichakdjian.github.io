@@ -793,20 +793,22 @@ body {
     border-radius: 1.1rem;
     padding: 1.2rem 1.25rem 1.15rem;
     box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
-    width: 100%;
-    max-width: 760px;
+    width: auto;
+    max-width: none;
 }
 
 .timeline-item.left .timeline-card {
     grid-column: 1;
-    justify-self: stretch;
-    margin-right: calc(72px + 2rem);
+    justify-self: end;
+    width: calc(100% - 140px);
+    margin-right: 70px;
 }
 
 .timeline-item.right .timeline-card {
     grid-column: 2;
-    justify-self: stretch;
-    margin-left: calc(45px + 1.4rem);
+    justify-self: start;
+    width: calc(100% - 140px);
+    margin-left: 70px;
 }
 
 .timeline-item.left .timeline-card::after,

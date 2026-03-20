@@ -1536,24 +1536,126 @@ body {
     }
 }
 
+
 @media (max-width: 600px) {
     .hero {
         padding-top: 3.4rem;
+        padding-bottom: 2.6rem;
     }
 
-    .cards-grid {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 2.8rem 0;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-intro {
+        font-size: 0.92rem;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-subtitle,
+    .hero-note {
+        font-size: 0.95rem;
+    }
+
+    .hero-actions {
+        gap: 0.6rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .about-photo {
+        max-width: 100%;
+    }
+
+    .cards-grid,
+    .tiles-grid,
+    .skills-flip-grid {
         grid-template-columns: minmax(0, 1fr);
     }
+
     .tile {
         aspect-ratio: 4 / 3;
     }
 
-    .tiles-grid {
-        grid-template-columns: minmax(0, 1fr);
+    .project-card-horizontal,
+    .project-slide.is-active:hover .project-card-horizontal {
+        padding: 0.85rem !important;
+        border-radius: 1rem;
     }
 
-    .skills-tiles {
-        grid-template-columns: minmax(0, 1fr);
+    .project-image-wrap,
+    .project-slide.is-active:hover .project-image-wrap {
+        aspect-ratio: 4 / 5;
+        max-height: none;
+    }
+
+    .project-content,
+    .project-slide.is-active:hover .project-content {
+        padding-top: 0.7rem !important;
+    }
+
+    .project-content h3,
+    .project-slide.is-active:hover .project-content h3 {
+        font-size: 1.25rem !important;
+        margin: 0.25rem 0 0.8rem !important;
+    }
+
+    .project-points li {
+        font-size: 0.82rem;
+        padding: 0.35rem 0.65rem;
+    }
+
+    .project-hover-content p,
+    .project-slide.is-active:hover .project-hover-content p {
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+
+    .project-badge,
+    .project-slide.is-active:hover .project-badge {
+        font-size: 0.82rem !important;
+        padding: 0.32rem 0.65rem !important;
+        margin-bottom: 0.6rem !important;
+    }
+
+    .timeline-card {
+        padding: 1rem 1rem 0.95rem;
+    }
+
+    .timeline-card h3 {
+        font-size: 1.05rem;
+    }
+
+    .timeline-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .timeline-meta,
+    .timeline-card p,
+    .timeline-date {
+        font-size: 0.84rem;
+    }
+
+    .contact-gif {
+        max-width: 100%;
+    }
+
+    .contact-note {
+        font-size: 0.9rem;
     }
 
     .footer-content {

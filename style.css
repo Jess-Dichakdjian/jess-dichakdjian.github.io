@@ -776,7 +776,8 @@ body {
     gap: 0.75rem;
 }
 
-/* Experience tiles */
+/* ===== EXPERIENCE TILES FINAL OVERRIDE ===== */
+
 .tiles-grid {
     margin-top: 1.75rem;
     display: grid;
@@ -786,41 +787,79 @@ body {
 
 .tile {
     position: relative;
+    display: block;
+    aspect-ratio: 5 / 4; /* slightly taller than wide */
     border-radius: 1.2rem;
     overflow: hidden;
     background: #ffffff;
     border: 1px solid var(--border-subtle);
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
     cursor: pointer;
-    aspect-ratio: 5 / 4;
+    min-height: unset;
+    padding: 0;
 }
 
+/* image wrappers */
+.tile .card-media,
+.tile .tile-logo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden;
+    background: #ffffff;
+    display: block;
+}
+
+/* remove old fixed logo height */
 .tile-logo {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
-    background: linear-gradient(135deg, #1f2933, var(--accent));
+    height: auto;
+    font-size: unset;
+    font-weight: unset;
+    color: unset;
+    background: #ffffff;
 }
 
+/* images */
+.tile .card-media img,
+.tile .tile-logo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+}
+
+/* remove dark fade */
+.tile .card-media-fade {
+    display: none;
+}
+
+/* text overlay */
 .tile-hover {
     position: absolute;
-    inset: 0;              /* 🔥 forces it to NOT take layout space */
+    inset: 0;
     z-index: 2;
-
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-    padding: 1rem;
-    color: white;
-
-    background: rgba(0, 0, 0, 0.65);
+    gap: 0.35rem;
+    color: #ffffff;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.68) 0%,
+        rgba(0, 0, 0, 0.2) 45%,
+        rgba(0, 0, 0, 0.02) 100%
+    );
     opacity: 0;
-    transition: opacity 0.25s ease;
+    transition: opacity 0.22s ease;
 }
 
 .tile:hover .tile-hover {
@@ -1163,6 +1202,9 @@ body {
 
     .cards-grid {
         grid-template-columns: minmax(0, 1fr);
+    }
+    .tile {
+        aspect-ratio: 4 / 3;
     }
 
     .tiles-grid {

@@ -39,14 +39,13 @@ body {
 }
 
 /* General media blocks */
-.card-media {
+.tile .card-media {
     position: relative;
-    overflow: hidden;
-    border-radius: 0.9rem;
-    margin-bottom: 0.75rem;
+    width: 100%;
+    height: 100%;
     aspect-ratio: 3 / 4;
-    height: auto;
-    background: #000;
+    border-radius: 0;
+    margin: 0;
 }
 
 .card-media img {
@@ -338,6 +337,8 @@ body {
     max-width: 40rem;
     color: var(--muted);
     font-size: 0.95rem;
+    margin-left: 2.5rem;
+
 }
 
 .section-grid {
@@ -783,12 +784,15 @@ body {
 
 .tile {
     position: relative;
+    display: grid;
+    grid-template-columns: 140px 1fr; /* image left, content right */
     border-radius: 1.2rem;
     overflow: hidden;
     background: #ffffff;
     border: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-soft);
     cursor: pointer;
+    min-height: 140px;
 }
 
 .tile-logo {
@@ -1027,6 +1031,9 @@ body {
 @media (max-width: 900px) {
     .hero-grid {
         grid-template-columns: minmax(0, 1fr);
+    }
+        .section-intro {
+        margin-left: 0;
     }
 
     .section-grid,

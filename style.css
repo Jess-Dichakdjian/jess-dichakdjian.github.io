@@ -800,7 +800,7 @@ body {
 .timeline-item.left .timeline-card {
     grid-column: 1;
     justify-self: stretch;
-    margin-right: calc(45px + 1.4rem);
+    margin-right: calc(72px + 2rem);
 }
 
 .timeline-item.right .timeline-card {

@@ -39,29 +39,20 @@ body {
 }
 
 /* General media blocks */
+/* Image container */
 .tile .card-media {
     position: absolute;
     inset: 0;
     overflow: hidden;
-    
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border-radius: 0;
-    overflow: hidden;
     background: #ffffff;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
+/* Image itself */
 .tile .card-media img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    padding: 1.2rem;
+    object-fit: cover;        /* clean, consistent look */
+    object-position: center;  /* ensures true centering */
     display: block;
 }
 

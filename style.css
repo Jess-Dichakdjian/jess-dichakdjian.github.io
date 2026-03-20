@@ -779,8 +779,6 @@ body {
 
 .timeline-card {
     position: relative;
-    width: 100%;
-    max-width: 520px;
     background: #ffffff;
     border: 1px solid var(--border-subtle);
     border-radius: 1.1rem;

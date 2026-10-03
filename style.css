@@ -78,7 +78,6 @@ body {
     object-fit: cover;
 }
 
-
 .pill-list {
     list-style: none;
     padding: 0;
@@ -335,7 +334,6 @@ body {
     color: var(--muted);
     font-size: 0.95rem;
     margin-left: 2.5rem;
-
 }
 
 .section-grid {
@@ -869,8 +867,6 @@ body {
     margin-top: 0.75rem;
 }
 
-
-
 /* Cards grid */
 .cards-grid {
     margin-top: 1.75rem;
@@ -1139,8 +1135,6 @@ body {
     box-shadow: 0 0 0 4px rgba(32, 106, 115, 0.10), 0 8px 22px rgba(15, 23, 42, 0.06);
 }
 
-
-
 /* Contact */
 .contact-grid {
     margin-top: 1.5rem;
@@ -1156,7 +1150,7 @@ body {
     font-size: 0.9rem;
     color: var(--muted);
     margin-top: 1rem;
-    margin-left:4rem;
+    margin-left: 4rem;
 }
 
 .contact-list a {
@@ -1535,6 +1529,7 @@ body {
         padding: 1.25rem 1.15rem;
     }
 }
+
 @media (max-width: 600px) {
     .hero {
         padding-top: 3.4rem;

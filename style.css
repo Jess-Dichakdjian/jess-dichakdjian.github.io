@@ -2002,3 +2002,94 @@ html { scroll-behavior: smooth; }
     .research-visual strong { font-size: 2.4rem; }
     .contact-right { margin-top: 0; }
 }
+
+
+/* =========================================================
+   RECRUITER PASS — CTA, METRICS, SCANABILITY
+   ========================================================= */
+
+.main-nav .nav-cta {
+    padding: 0.48rem 0.95rem;
+    border-radius: 999px;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    color: #ffffff;
+    font-weight: 700;
+}
+.main-nav .nav-cta:hover {
+    color: #ffffff;
+    background: #1a5360;
+    border-color: #1a5360;
+}
+
+.project-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 1rem;
+}
+.project-metrics span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.28rem;
+    padding: 0.36rem 0.55rem;
+    border-radius: 0.65rem;
+    background: #f6f8f9;
+    border: 1px solid var(--border-subtle);
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.25;
+}
+.project-metrics strong {
+    color: var(--text);
+    font-weight: 750;
+}
+.project-slide.is-active:hover .project-metrics {
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+.project-slide.is-active:hover .project-metrics span {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.22);
+    color: #ffffff;
+}
+.project-slide.is-active:hover .project-metrics strong {
+    color: #ffffff;
+}
+
+.experience-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin: 1rem 0;
+}
+.experience-metrics span {
+    padding: 0.45rem 0.65rem;
+    border-radius: 0.7rem;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.82rem;
+}
+.experience-metrics strong {
+    color: var(--text);
+}
+
+@media (max-width: 760px) {
+    .hero-media-card:nth-child(2) {
+        display: none;
+    }
+
+    .main-nav .nav-cta {
+        background: var(--accent);
+        color: #ffffff;
+        border: 1px solid var(--accent);
+    }
+
+    .project-metrics {
+        gap: 0.35rem;
+    }
+
+    .project-metrics span {
+        font-size: 0.72rem;
+    }
+}

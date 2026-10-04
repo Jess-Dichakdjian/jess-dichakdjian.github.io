@@ -1,12 +1,12 @@
 :root {
-    --bg: #f4f5f7;
-    --bg-alt: #ffffff;
-    --card-bg: #ffffff;
+    --bg: #F2F8F8;
+    --bg-alt: #E6F1F2;
+    --card-bg: #FBFEFE;
     --text: #1a1d23;
     --muted: #5c6b73;
     --accent: #206A73;
-    --accent-soft: rgba(32, 106, 115, 0.08);
-    --border-subtle: #e1e5ea;
+    --accent-soft: rgba(32, 106, 115, 0.10);
+    --border-subtle: #CFE1E3;
     --shadow-soft: 0 8px 22px rgba(15, 23, 42, 0.06);
     --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
         "Segoe UI", sans-serif;
@@ -103,7 +103,7 @@ body {
     top: 0;
     z-index: 10;
     backdrop-filter: blur(10px);
-    background: rgba(244, 245, 247, 0.9);
+    background: rgba(242, 248, 248, 0.92);
     border-bottom: 1px solid rgba(15, 23, 42, 0.06);
 }
 
@@ -1670,7 +1670,7 @@ body {
 
 html { scroll-behavior: smooth; }
 
-.site-header { background: rgba(244, 245, 247, 0.94); }
+.site-header { background: rgba(242, 248, 248, 0.94); }
 .nav-container { min-height: 4rem; }
 .main-nav { align-items: center; }
 .main-nav a:last-child {
@@ -1814,7 +1814,7 @@ html { scroll-behavior: smooth; }
 .about-text-wide { max-width: 880px; font-size: 1rem; }
 .about-text-wide p:first-child { margin-top: 0; }
 .about-research-card {
-    background: #f7f9fa;
+    background: #F5FAFA;
     border: 1px solid var(--border-subtle);
     border-radius: 1.1rem;
     padding: 1.35rem;
@@ -2034,7 +2034,7 @@ html { scroll-behavior: smooth; }
     gap: 0.28rem;
     padding: 0.36rem 0.55rem;
     border-radius: 0.65rem;
-    background: #f6f8f9;
+    background: #F3F9F9;
     border: 1px solid var(--border-subtle);
     color: var(--muted);
     font-size: 0.78rem;

@@ -2093,3 +2093,24 @@ html { scroll-behavior: smooth; }
         font-size: 0.72rem;
     }
 }
+
+/* Contact responsive fix: prevent GIF overlap when layout collapses */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-right {
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    .contact-gif {
+        max-width: 320px;
+    }
+
+    .contact-note {
+        text-align: left;
+    }
+}

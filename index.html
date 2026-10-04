@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jessica Dichakdjian | Robotics Engineer | Robot Learning & Manipulation</title>
-    <link rel="stylesheet" href="style.css?v=20261004-6" />
+    <link rel="stylesheet" href="style.css?v=20261004-7" />
     <meta name="description" content="Portfolio of Jessica Dichakdjian, a London-based MSc Robotics & Mechatronics candidate conducting thesis research at UCL in robot learning, manipulation, shared autonomy, XR teleoperation, control, and robotics systems integration." />
 </head>
 <body>
@@ -143,306 +143,257 @@
             <div class="container">
                 <h2>Selected Projects</h2>
                 <p class="section-intro">
-                    Selected work across robot learning, manipulation, teleoperation, control,
-                    soft robotics, embedded systems, and physical robot integration.
+                    A selection of my strongest work across robot learning, manipulation, teleoperation,
+                    control, soft robotics, and physical system integration.
                 </p>
 
-                <div class="projects-slider">
-                    <button class="slider-btn slider-btn-prev" type="button" aria-label="Previous project">‹</button>
+                <div class="projects-section-label">
+                    <span>Featured</span>
+                    <p>Current research and the projects most relevant to robotics engineering roles.</p>
+                </div>
 
-                    <div class="projects-viewport">
-                        <div class="projects-track">
-                            <article class="project-slide">
-                                <div class="project-card-horizontal">
-                                    <span class="badge project-badge">MSc Thesis · In Progress</span>
-                                    <div class="project-image-wrap project-visual-placeholder">
-                                        <div class="research-visual">
-                                            <span class="research-visual-kicker">UCL · Robot Learning</span>
-                                            <strong>Shared Autonomy</strong>
-                                            <div class="research-visual-tags">
-                                                <span>Diffusion Policy</span>
-                                                <span>VLA</span>
-                                                <span>Gaussian Process</span>
-                                                <span>XR Corrections</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="project-content">
-                                        <div class="card-header">
-                                            <h3>Uncertainty-Aware Shared Autonomy for Manipulation</h3>
-                                        </div>
-                                        <ul class="pill-list project-points">
-                                            <li>Robot Learning</li>
-                                            <li>MuJoCo</li>
-                                            <li>PyTorch</li>
-                                            <li>VLA Models</li>
-                                            <li>Diffusion Policies</li>
-                                        </ul>
-                                        <div class="project-metrics">
-                                            <span><strong>Current</strong> VLA integration</span>
-                                            <span><strong>Platform</strong> Franka · MuJoCo</span>
-                                        </div>
-                                        <div class="project-hover-content">
-                                            <p>
-                                                Current MSc thesis research at UCL investigating how learned manipulation
-                                                policies can use uncertainty to decide when to pause autonomy and request
-                                                targeted human corrective demonstrations.
-                                            </p>
-                                            <p>
-                                                Current work includes VLA integration and evaluation on a Franka MuJoCo
-                                                manipulation benchmark; XR corrective demonstrations and uncertainty-aware
-                                                intervention are later stages of the research pipeline.
-                                            </p>
-                                            <div class="card-links">
-                                                <a href="https://github.com/Jess-Dichakdjian/shared-autonomy-robot-learning" class="text-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="featured-projects-grid">
+                    <!-- MSc Thesis -->
+                    <article class="project-grid-card project-grid-card-featured">
+                        <div class="project-grid-media project-visual-placeholder">
+                            <div class="research-visual">
+                                <span class="research-visual-kicker">UCL · MSc Thesis · In Progress</span>
+                                <strong>Shared Autonomy</strong>
+                                <div class="research-visual-tags">
+                                    <span>VLA</span>
+                                    <span>Diffusion Policy</span>
+                                    <span>Gaussian Process</span>
+                                    <span>XR Corrections</span>
                                 </div>
-                            </article>
-
-                            <article class="project-slide">
-                                <div class="project-card-horizontal">
-                                    <span class="badge project-badge">XR · Teleoperation</span>
-                                    <div class="project-image-wrap">
-                                        <img src="images/xr.gif" alt="XR teleoperation of a physical Braccio robot" loading="lazy" />
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="card-header">
-                                            <h3>XR Teleoperation of a Physical Braccio Robot</h3>
-                                        </div>
-                                        <ul class="pill-list project-points">
-                                            <li>Unity</li>
-                                            <li>Meta Quest</li>
-                                            <li>ROS Noetic</li>
-                                            <li>MoveIt</li>
-                                            <li>BioIK</li>
-                                            <li>Arduino</li>
-                                        </ul>
-                                        <div class="project-metrics">
-                                            <span><strong>2</strong> control architectures tested</span>
-                                            <span><strong>Physical</strong> Braccio validation</span>
-                                        </div>
-                                        <div class="project-hover-content">
-                                            <p>
-                                                Built and tested an XR teleoperation pipeline connecting Meta Quest tracking
-                                                to a physical Braccio arm through Unity, ROS, inverse kinematics, and Arduino control.
-                                            </p>
-                                            <p>
-                                                After validating a ROS/MoveIt/RViz architecture, the final system moved IK
-                                                into Unity with BioIK to reduce real-time teleoperation latency.
-                                            </p>
-                                            <div class="card-links">
-                                                <a href="https://github.com/Jess-Dichakdjian/xr-braccio-teleoperation" class="text-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="project-slide">
-                                <div class="project-card-horizontal">
-                                    <span class="badge project-badge">Industrial Robotics</span>
-                                    <div class="project-image-wrap">
-                                        <img src="images/matlab.gif" alt="4-DOF manipulator MATLAB and Simscape analysis" loading="lazy" />
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="card-header">
-                                            <h3>Industrial Robotics — Visor Automation</h3>
-                                        </div>
-                                        <ul class="pill-list project-points">
-                                            <li>MATLAB</li>
-                                            <li>Simscape</li>
-                                            <li>SolidWorks</li>
-                                            <li>IK &amp; Dynamics</li>
-                                            <li>TM Robot</li>
-                                            <li>Machine Vision</li>
-                                        </ul>
-                                        <div class="project-metrics">
-                                            <span><strong>4-DOF</strong> custom manipulator</span>
-                                            <span><strong>0–1.0 kg</strong> payload study</span>
-                                        </div>
-                                        <div class="project-hover-content">
-                                            <p>
-                                                Designed and simulated a custom 4-DOF Rz–Ry–Ry–Ry manipulator for helmet-visor
-                                                manipulation and inspection, including kinematics, workspace, dynamics, torque,
-                                                payload, and MATLAB-vs-Simscape validation.
-                                            </p>
-                                            <p>
-                                                Physical lab work used a TM collaborative robot for pick-and-place, vision,
-                                                tic-tac-toe, contact drawing, visor manipulation, hinge imaging, and stamping tasks.
-                                            </p>
-                                            <div class="card-links">
-                                                <a href="https://github.com/Jess-Dichakdjian/industrial-robotics-visor-automation" class="text-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="project-slide">
-                                <div class="project-card-horizontal">
-                                    <span class="badge project-badge">HRI · Control</span>
-                                    <div class="project-image-wrap">
-                                        <img src="images/braccio.gif" alt="EduExo controlling the Unity Brick Breaker exergame" loading="lazy" />
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="card-header">
-                                            <h3>EduExo Brick Breaker Rehabilitation Exergame</h3>
-                                        </div>
-                                        <ul class="pill-list project-points">
-                                            <li>Unity / C#</li>
-                                            <li>Arduino</li>
-                                            <li>Transparent Control</li>
-                                            <li>Assist-as-Needed</li>
-                                            <li>Data Logging</li>
-                                        </ul>
-                                        <div class="project-metrics">
-                                            <span><strong>2</strong> healthy users</span>
-                                            <span><strong>4</strong> assistance levels</span>
-                                            <span><strong>60 s</strong> sessions</span>
-                                        </div>
-                                        <div class="project-hover-content">
-                                            <p>
-                                                Individually redeveloped an EduExo–Unity platform with active transparent
-                                                control, four assist-as-needed intensity settings, real-time tracking feedback,
-                                                timed sessions, and automatic performance logging.
-                                            </p>
-                                            <p>
-                                                The final technical evaluation used two healthy participants across
-                                                Off/Low/Medium/High assistance conditions.
-                                            </p>
-                                            <div class="card-links">
-                                                <a href="https://github.com/Jess-Dichakdjian/eduexo-brick-breaker-rehabilitation" class="text-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="project-slide">
-                                <div class="project-card-horizontal">
-                                    <span class="badge project-badge">Soft Robotics</span>
-                                    <div class="project-image-wrap">
-                                        <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/tendon-driven-soft-gripper/main/media/prototype/final%20gripper%20cad.png" alt="Tendon-driven soft robotic gripper CAD" loading="lazy" />
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="card-header">
-                                            <h3>Tendon-Driven Soft Robotic Gripper</h3>
-                                        </div>
-                                        <ul class="pill-list project-points">
-                                            <li>Soft Robotics</li>
-                                            <li>Tendon Actuation</li>
-                                            <li>Silicone Molding</li>
-                                            <li>Pressure Sensing</li>
-                                            <li>3D Printing</li>
-                                        </ul>
-                                        <div class="project-metrics">
-                                            <span><strong>3-finger</strong> compliant gripper</span>
-                                            <span><strong>Functional</strong> grasp + suction tests</span>
-                                        </div>
-                                        <div class="project-hover-content">
-                                            <p>
-                                                Three-finger compliant gripper using antagonistic tendons, a coaxial
-                                                double-spool mechanism, palm suction, and pressure sensing for adaptive grasping.
-                                            </p>
-                                            <p>
-                                                My main contributions included mold preparation, tendon/cable insertion,
-                                                pressure-sensor integration, prototyping, assembly, and experimental validation.
-                                            </p>
-                                            <div class="card-links">
-                                                <a href="https://github.com/Jess-Dichakdjian/tendon-driven-soft-gripper" class="text-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="project-slide">
-                                <div class="project-card-horizontal">
-                                    <span class="badge project-badge">Bioinspired Robotics</span>
-                                    <div class="project-image-wrap">
-                                        <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/bioinspired-robotic-fish/main/P.H.O.E.N.I.X_Media/P.H.O.E.N.I.X_Testing_Videos/water_submersion_leak_test.jpeg" alt="PHOENIX bioinspired robotic fish during water testing" loading="lazy" />
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="card-header">
-                                            <h3>PHOENIX Bioinspired Robotic Fish</h3>
-                                        </div>
-                                        <ul class="pill-list project-points">
-                                            <li>Mechanical Design</li>
-                                            <li>Arduino</li>
-                                            <li>PID Control</li>
-                                            <li>IMU</li>
-                                            <li>Waterproofing</li>
-                                            <li>MATLAB</li>
-                                        </ul>
-                                        <div class="project-metrics">
-                                            <span><strong>0.33 m/s</strong> swim speed</span>
-                                            <span><strong>0.73 BL/s</strong> normalized speed</span>
-                                            <span><strong>1.38 N</strong> peak dynamic load</span>
-                                        </div>
-                                        <div class="project-hover-content">
-                                            <p>
-                                                Atlantic-mackerel-inspired robotic fish with a mechanically actuated segmented
-                                                tail, embedded sensing, closed-loop propulsion control, active head stabilization,
-                                                and in-water validation.
-                                            </p>
-                                            <p>
-                                                Final testing demonstrated 0.33 m/s swimming speed at 1.5 Hz
-                                                (0.73 body lengths/s).
-                                            </p>
-                                            <div class="card-links">
-                                                <a href="https://github.com/Jess-Dichakdjian/bioinspired-robotic-fish" class="text-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="project-slide">
-                                <div class="project-card-horizontal">
-                                    <span class="badge project-badge">BSc Thesis · Excellence</span>
-                                    <div class="project-image-wrap">
-                                        <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/sign-language-robotic-hand/main/media/prototype/final_prototype.jpg" alt="Sign-language educational robotic hand prototype" loading="lazy" />
-                                    </div>
-                                    <div class="project-content">
-                                        <div class="card-header">
-                                            <h3>Sign-Language Educational Robotic Hand</h3>
-                                        </div>
-                                        <ul class="pill-list project-points">
-                                            <li>Continuum Wrist</li>
-                                            <li>SolidWorks</li>
-                                            <li>Adams</li>
-                                            <li>Raspberry Pi</li>
-                                            <li>3D Printing</li>
-                                        </ul>
-                                        <div class="project-metrics">
-                                            <span><strong>Maximum</strong> thesis grade</span>
-                                            <span><strong>Excellence</strong> + Red Diploma</span>
-                                        </div>
-                                        <div class="project-hover-content">
-                                            <p>
-                                                Bachelor thesis extending a commercial robotic hand with a custom cable-driven
-                                                compliant continuum wrist, multibody simulation, additive manufacturing,
-                                                embedded control, and a preliminary vision-based sign-selection proof of concept.
-                                            </p>
-                                            <p>
-                                                Awarded the maximum thesis grade and Excellence; graduated with the Armenian
-                                                Red Diploma for outstanding overall academic performance.
-                                            </p>
-                                            <div class="card-links">
-                                                <a href="https://github.com/Jess-Dichakdjian/sign-language-robotic-hand" class="text-link" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-                                                <a href="https://doi.org/10.5281/zenodo.23102292" class="text-link" target="_blank" rel="noopener noreferrer">DOI</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
                         </div>
-                    </div>
 
-                    <button class="slider-btn slider-btn-next" type="button" aria-label="Next project">›</button>
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">Robot Learning · Manipulation</div>
+                            <h3>Uncertainty-Aware Shared Autonomy for Manipulation</h3>
+                            <p class="project-grid-summary">
+                                Current UCL thesis research on when learned manipulation policies should
+                                request targeted human correction instead of continuing autonomously.
+                            </p>
+
+                            <div class="project-metrics">
+                                <span><strong>Current</strong> VLA integration</span>
+                                <span><strong>Platform</strong> Franka · MuJoCo</span>
+                            </div>
+
+                            <ul class="project-grid-tags">
+                                <li>PyTorch</li>
+                                <li>MuJoCo</li>
+                                <li>VLA Models</li>
+                                <li>Diffusion Policies</li>
+                            </ul>
+
+                            <div class="project-grid-actions">
+                                <a href="https://github.com/Jess-Dichakdjian/shared-autonomy-robot-learning" class="btn project-btn" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- XR Teleoperation -->
+                    <article class="project-grid-card project-grid-card-featured">
+                        <div class="project-grid-media">
+                            <img src="images/xr.gif" alt="XR teleoperation of a physical Braccio robot" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">XR · Teleoperation</div>
+                            <h3>XR Teleoperation of a Physical Braccio Robot</h3>
+                            <p class="project-grid-summary">
+                                Built and physically validated a Meta Quest-to-robot control pipeline
+                                through Unity, inverse kinematics, ROS, and Arduino.
+                            </p>
+
+                            <div class="project-metrics">
+                                <span><strong>2</strong> control architectures tested</span>
+                                <span><strong>Physical</strong> robot validation</span>
+                            </div>
+
+                            <ul class="project-grid-tags">
+                                <li>Unity</li>
+                                <li>Meta Quest</li>
+                                <li>ROS Noetic</li>
+                                <li>MoveIt</li>
+                                <li>BioIK</li>
+                            </ul>
+
+                            <div class="project-grid-actions">
+                                <a href="https://github.com/Jess-Dichakdjian/xr-braccio-teleoperation" class="btn project-btn" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Industrial Robotics -->
+                    <article class="project-grid-card project-grid-card-featured">
+                        <div class="project-grid-media">
+                            <img src="images/matlab.gif" alt="4-DOF industrial robotics MATLAB and Simscape project" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">Industrial Robotics · Manipulation</div>
+                            <h3>Visor Automation &amp; 4-DOF Manipulator</h3>
+                            <p class="project-grid-summary">
+                                Designed and simulated a custom manipulator for helmet visor interaction,
+                                then applied manipulation, vision, and contact tasks on a TM collaborative robot.
+                            </p>
+
+                            <div class="project-metrics">
+                                <span><strong>4-DOF</strong> custom manipulator</span>
+                                <span><strong>0–1.0 kg</strong> payload study</span>
+                            </div>
+
+                            <ul class="project-grid-tags">
+                                <li>MATLAB</li>
+                                <li>Simscape</li>
+                                <li>SolidWorks</li>
+                                <li>IK &amp; Dynamics</li>
+                                <li>TM Robot</li>
+                            </ul>
+
+                            <div class="project-grid-actions">
+                                <a href="https://github.com/Jess-Dichakdjian/industrial-robotics-visor-automation" class="btn project-btn" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-section-label projects-section-label-secondary">
+                    <span>More Robotics Work</span>
+                    <p>Additional projects showing breadth across HRI, controls, soft robotics, and physical prototyping.</p>
+                </div>
+
+                <div class="secondary-projects-grid">
+                    <!-- EduExo -->
+                    <article class="project-grid-card project-grid-card-compact">
+                        <div class="project-grid-media">
+                            <img src="images/braccio.gif" alt="EduExo controlling a Unity Brick Breaker rehabilitation exergame" loading="lazy" decoding="async" />
+                        </div>
+
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">HRI · Control</div>
+                            <h3>EduExo Brick Breaker</h3>
+                            <p class="project-grid-summary">
+                                Individually redeveloped an EduExo–Unity platform with active transparent
+                                control, assist-as-needed support, real-time feedback, and automatic logging.
+                            </p>
+
+                            <div class="project-metrics">
+                                <span><strong>2</strong> users</span>
+                                <span><strong>4</strong> assistance levels</span>
+                                <span><strong>60 s</strong> sessions</span>
+                            </div>
+
+                            <ul class="project-grid-tags">
+                                <li>Unity / C#</li>
+                                <li>Arduino</li>
+                                <li>Assist-as-Needed</li>
+                            </ul>
+
+                            <div class="project-grid-actions">
+                                <a href="https://github.com/Jess-Dichakdjian/eduexo-brick-breaker-rehabilitation" class="text-link" target="_blank" rel="noopener noreferrer">View project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PHOENIX -->
+                    <article class="project-grid-card project-grid-card-compact">
+                        <div class="project-grid-media">
+                            <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/bioinspired-robotic-fish/main/P.H.O.E.N.I.X_Media/P.H.O.E.N.I.X_Testing_Videos/water_submersion_leak_test.jpeg" alt="PHOENIX bioinspired robotic fish during water testing" loading="lazy" />
+                        </div>
+
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">Bioinspired Robotics</div>
+                            <h3>PHOENIX Robotic Fish</h3>
+                            <p class="project-grid-summary">
+                                Built and tested a waterproof mackerel-inspired robot with segmented tail
+                                propulsion, PID speed control, IMU stabilization, and in-water validation.
+                            </p>
+
+                            <div class="project-metrics">
+                                <span><strong>0.33 m/s</strong> speed</span>
+                                <span><strong>0.73 BL/s</strong></span>
+                                <span><strong>1.38 N</strong> peak load</span>
+                            </div>
+
+                            <ul class="project-grid-tags">
+                                <li>Mechanical Design</li>
+                                <li>Arduino</li>
+                                <li>PID</li>
+                                <li>IMU</li>
+                            </ul>
+
+                            <div class="project-grid-actions">
+                                <a href="https://github.com/Jess-Dichakdjian/bioinspired-robotic-fish" class="text-link" target="_blank" rel="noopener noreferrer">View project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Soft Gripper -->
+                    <article class="project-grid-card project-grid-card-compact">
+                        <div class="project-grid-media">
+                            <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/tendon-driven-soft-gripper/main/media/prototype/final%20gripper%20cad.png" alt="Tendon-driven soft robotic gripper CAD" loading="lazy" />
+                        </div>
+
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">Soft Robotics · Mechanical Design</div>
+                            <h3>Tendon-Driven Soft Gripper</h3>
+                            <p class="project-grid-summary">
+                                Three-finger compliant gripper using antagonistic tendons, suction-assisted
+                                grasping, pressure sensing, silicone molding, and rapid prototyping.
+                            </p>
+
+                            <div class="project-metrics">
+                                <span><strong>3-finger</strong> compliant design</span>
+                                <span><strong>Functional</strong> grasp + suction tests</span>
+                            </div>
+
+                            <ul class="project-grid-tags">
+                                <li>Soft Robotics</li>
+                                <li>3D Printing</li>
+                                <li>Silicone Molding</li>
+                            </ul>
+
+                            <div class="project-grid-actions">
+                                <a href="https://github.com/Jess-Dichakdjian/tendon-driven-soft-gripper" class="text-link" target="_blank" rel="noopener noreferrer">View project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- BSc Thesis -->
+                    <article class="project-grid-card project-grid-card-compact">
+                        <div class="project-grid-media">
+                            <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/sign-language-robotic-hand/main/media/prototype/final_prototype.jpg" alt="Sign-language educational robotic hand prototype" loading="lazy" />
+                        </div>
+
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">BSc Thesis · Excellence</div>
+                            <h3>Sign-Language Robotic Hand</h3>
+                            <p class="project-grid-summary">
+                                Extended a robotic hand with a custom cable-driven continuum wrist,
+                                multibody simulation, additive manufacturing, and embedded control.
+                            </p>
+
+                            <div class="project-metrics">
+                                <span><strong>Maximum</strong> thesis grade</span>
+                                <span><strong>Excellence</strong> + Red Diploma</span>
+                            </div>
+
+                            <ul class="project-grid-tags">
+                                <li>SolidWorks</li>
+                                <li>Adams</li>
+                                <li>Raspberry Pi</li>
+                            </ul>
+
+                            <div class="project-grid-actions">
+                                <a href="https://github.com/Jess-Dichakdjian/sign-language-robotic-hand" class="text-link" target="_blank" rel="noopener noreferrer">View project</a>
+                                <a href="https://doi.org/10.5281/zenodo.23102292" class="text-link" target="_blank" rel="noopener noreferrer">DOI</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>

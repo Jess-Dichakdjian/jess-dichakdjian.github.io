@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jessica Dichakdjian | Robotics Engineer | Robot Learning & Manipulation</title>
-    <link rel="stylesheet" href="style.css?v=20261004-7" />
+    <link rel="stylesheet" href="style.css?v=20261004-8" />
     <meta name="description" content="Portfolio of Jessica Dichakdjian, a London-based MSc Robotics & Mechatronics candidate conducting thesis research at UCL in robot learning, manipulation, shared autonomy, XR teleoperation, control, and robotics systems integration." />
 </head>
 <body>
@@ -261,12 +261,21 @@
                     </article>
                 </div>
 
-                <div class="projects-section-label projects-section-label-secondary">
-                    <span>More Robotics Work</span>
-                    <p>Additional projects showing breadth across HRI, controls, soft robotics, and physical prototyping.</p>
-                </div>
+                <details class="more-projects-disclosure">
+                    <summary class="more-projects-summary">
+                        <div class="more-projects-summary-copy">
+                            <span class="more-projects-kicker">More Robotics Work</span>
+                            <strong>Explore 4 additional robotics projects</strong>
+                            <p>HRI · control · soft robotics · bioinspired robotics · mechanical design</p>
+                        </div>
+                        <span class="more-projects-toggle" aria-hidden="true">
+                            <span class="more-projects-toggle-open">Explore projects ↓</span>
+                            <span class="more-projects-toggle-close">Hide projects ↑</span>
+                        </span>
+                    </summary>
 
-                <div class="secondary-projects-grid">
+                    <div class="more-projects-panel">
+                        <div class="secondary-projects-grid">
                     <!-- EduExo -->
                     <article class="project-grid-card project-grid-card-compact">
                         <div class="project-grid-media">
@@ -395,6 +404,8 @@
                         </div>
                     </article>
                 </div>
+                    </div>
+                </details>
             </div>
         </section>
 

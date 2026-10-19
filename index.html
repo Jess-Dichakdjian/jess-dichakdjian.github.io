@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jessica Dichakdjian | Robotics Engineer | Robot Learning & Manipulation</title>
-    <link rel="stylesheet" href="style.css?v=20261004-8" />
+    <link rel="stylesheet" href="style.css?v=20261019-1" />
     <meta name="description" content="Portfolio of Jessica Dichakdjian, a London-based MSc Robotics & Mechatronics candidate conducting thesis research at UCL in robot learning, manipulation, shared autonomy, XR teleoperation, control, and robotics systems integration." />
 </head>
 <body>
@@ -21,6 +21,9 @@
             <nav class="main-nav" aria-label="Primary navigation">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
+                <a href="#research">Current Research</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
                 <a href="Files/Jessica_Dichakdjian_Robotics_CV.pdf" class="nav-cta" download>Download CV</a>
@@ -35,7 +38,7 @@
                 <div class="hero-copy">
                     <p class="hero-kicker">London, UK · Robotics & Robot Learning</p>
                     <h1>Jessica Dichakdjian</h1>
-                    <p class="hero-role">Robotics Engineer | Robot Learning &amp; Manipulation</p>
+                    <p class="hero-role">Robotics Engineering · Manipulation · Robot Learning</p>
 
                     <p class="hero-status">
                         MSc Robotics &amp; Mechatronics — <strong>Politecnico di Milano</strong><br />
@@ -48,6 +51,7 @@
 
                     <div class="hero-actions hero-actions-modern">
                         <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="https://github.com/jess-dichakdjian" class="btn ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
                         <a href="Files/Jessica_Dichakdjian_Robotics_CV.pdf" class="btn ghost" download>Download CV</a>
                     </div>
                 </div>
@@ -89,25 +93,13 @@
                             <strong>University College London (UCL)</strong> in London.
                         </p>
                         <p>
-                            I work across the robotics stack: learned manipulation and simulation,
-                            ROS/XR teleoperation, control and embedded integration, and mechanical
-                            prototyping with experimental validation. My current research brings these
-                            areas together through shared autonomy and human corrective demonstrations.
+                            I develop and evaluate robotic systems across manipulation, teleoperation,
+                            simulation and embedded control. My experience includes physically tested
+                            robotic prototypes, experimental validation and research software. I am
+                            currently conducting MSc thesis research at UCL, exploring learning-based
+                            manipulation and uncertainty-aware shared autonomy.
                         </p>
-                    </div>
-
-                    <div class="about-research-card">
-                        <span class="research-label">Current MSc Thesis · UCL</span>
-                        <h3>Uncertainty-Aware Shared Autonomy for Robotic Manipulation</h3>
-                        <p>
-                            Using diffusion policies, Gaussian Processes, and XR-based human corrective
-                            demonstrations to study when learned robot policies should request targeted human assistance.
-                        </p>
-                        <div class="research-status">
-                            <span>VLA integration in progress</span>
-                            <span>MuJoCo · Franka manipulation</span>
-                        </div>
-                        <a href="https://github.com/Jess-Dichakdjian/shared-autonomy-robot-learning" class="text-link" target="_blank" rel="noopener noreferrer">View thesis repository</a>
+                        <p>My interests include robotics software, autonomy and robot learning.</p>
                     </div>
                 </div>
 
@@ -141,55 +133,41 @@
         <!-- PROJECTS -->
         <section id="projects" class="section">
             <div class="container">
-                <h2>Selected Projects</h2>
+                <h2>Selected Robotics Projects</h2>
                 <p class="section-intro">
-                    A selection of my strongest work across robot learning, manipulation, teleoperation,
-                    control, soft robotics, and physical system integration.
+                    Built, simulated, integrated and experimentally evaluated robotic systems.
                 </p>
 
                 <div class="projects-section-label">
-                    <span>Featured</span>
-                    <p>Current research and the projects most relevant to robotics engineering roles.</p>
+                    <span>Completed engineering</span>
+                    <p>Physical prototypes, industrial robotics and evaluated simulation research.</p>
                 </div>
 
                 <div class="featured-projects-grid">
-                    <!-- MSc Thesis -->
+                    <!-- Ego2Robot -->
                     <article class="project-grid-card project-grid-card-featured">
-                        <div class="project-grid-media project-visual-placeholder">
-                            <div class="research-visual">
-                                <span class="research-visual-kicker">UCL · MSc Thesis · In Progress</span>
-                                <strong>Shared Autonomy</strong>
-                                <div class="research-visual-tags">
-                                    <span>VLA</span>
-                                    <span>Diffusion Policy</span>
-                                    <span>Gaussian Process</span>
-                                    <span>XR Corrections</span>
-                                </div>
-                            </div>
+                        <div class="project-grid-media">
+                            <img src="images/ego2robot-phone-panda.gif" alt="Phone-recorded pick-and-place demonstration shown beside a simulated Panda robot in LIBERO" fetchpriority="high" decoding="async" />
                         </div>
 
                         <div class="project-grid-body">
-                            <div class="project-grid-eyebrow">Robot Learning · Manipulation</div>
-                            <h3>Uncertainty-Aware Shared Autonomy for Manipulation</h3>
+                            <div class="project-grid-eyebrow">Independent Research · Evaluated Simulation Prototype</div>
+                            <h3>Ego2Robot: Phone Demonstrations to Simulated Manipulation</h3>
                             <p class="project-grid-summary">
-                                Current UCL thesis research on when learned manipulation policies should
-                                request targeted human correction instead of continuing autonomously.
+                                Built a pipeline turning sparse phone-video annotations into route guidance for a simulated Panda in LIBERO. Compared human-guided and alternative routes, including their limitations.
                             </p>
 
                             <div class="project-metrics">
-                                <span><strong>Current</strong> VLA integration</span>
-                                <span><strong>Platform</strong> Franka · MuJoCo</span>
+                                <span><strong>9/9</strong> matched episodes succeeded</span>
+                                <span><strong>Route prior</strong> no improvement over straight path</span>
                             </div>
 
                             <ul class="project-grid-tags">
-                                <li>PyTorch</li>
-                                <li>MuJoCo</li>
-                                <li>VLA Models</li>
-                                <li>Diffusion Policies</li>
+                                <li>Python</li><li>LIBERO</li><li>Retargeting</li><li>Evaluation</li>
                             </ul>
 
                             <div class="project-grid-actions">
-                                <a href="https://github.com/Jess-Dichakdjian/shared-autonomy-robot-learning" class="btn project-btn" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                                <a href="https://github.com/Jess-Dichakdjian/ego2robot" class="btn project-btn" target="_blank" rel="noopener noreferrer">Project &amp; results</a>
                             </div>
                         </div>
                     </article>
@@ -204,9 +182,10 @@
                             <div class="project-grid-eyebrow">XR · Teleoperation</div>
                             <h3>XR Teleoperation of a Physical Braccio Robot</h3>
                             <p class="project-grid-summary">
-                                Built and physically validated a Meta Quest-to-robot control pipeline
-                                through Unity, inverse kinematics, ROS, and Arduino.
+                                Developed and physically tested an XR teleoperation system connecting Meta Quest tracking to a Braccio manipulator. Iterated from ROS/MoveIt to direct Unity/BioIK control to improve responsiveness.
                             </p>
+
+                            <div class="project-status-note">Completed academic prototype · Physical robot · Team project</div>
 
                             <div class="project-metrics">
                                 <span><strong>2</strong> control architectures tested</span>
@@ -234,11 +213,10 @@
                         </div>
 
                         <div class="project-grid-body">
-                            <div class="project-grid-eyebrow">Industrial Robotics · Manipulation</div>
+                            <div class="project-grid-eyebrow">Completed Academic Project · Simulation + Physical Robot · Team</div>
                             <h3>Visor Automation &amp; 4-DOF Manipulator</h3>
                             <p class="project-grid-summary">
-                                Designed and simulated a custom manipulator for helmet visor interaction,
-                                then applied manipulation, vision, and contact tasks on a TM collaborative robot.
+                                Modelled a custom 4-DOF manipulator in MATLAB/Simscape, then worked on physical TM cobot manipulation, machine vision, contact and inspection tasks.
                             </p>
 
                             <div class="project-metrics">
@@ -259,14 +237,57 @@
                             </div>
                         </div>
                     </article>
+
+                    <!-- PHOENIX -->
+                    <article class="project-grid-card project-grid-card-featured">
+                        <div class="project-grid-media">
+                            <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/bioinspired-robotic-fish/main/P.H.O.E.N.I.X_Media/P.H.O.E.N.I.X_Testing_Videos/water_submersion_leak_test.jpeg" alt="PHOENIX bioinspired robotic fish during water testing" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="project-grid-body">
+                            <div class="project-grid-eyebrow">Completed Academic Project · Physical Prototype · Team</div>
+                            <h3>PHOENIX Bioinspired Robotic Fish</h3>
+                            <p class="project-grid-summary">Contributed to mechanical design, fabrication, integration and in-water testing of a waterproof robotic fish with a bioinspired tail.</p>
+                            <div class="project-metrics"><span><strong>0.33 m/s</strong> measured speed</span><span><strong>1.5 Hz</strong> tail frequency</span></div>
+                            <ul class="project-grid-tags"><li>Mechanical design</li><li>Fabrication</li><li>Embedded sensing</li><li>Testing</li></ul>
+                            <div class="project-grid-actions"><a href="https://github.com/Jess-Dichakdjian/bioinspired-robotic-fish" class="btn project-btn" target="_blank" rel="noopener noreferrer">View project</a></div>
+                        </div>
+                    </article>
                 </div>
 
-                <details class="more-projects-disclosure">
+            </div>
+        </section>
+
+        <!-- CURRENT RESEARCH -->
+        <section id="research" class="section section-alt">
+            <div class="container">
+                <div class="research-heading">
+                    <div><p class="eyebrow">Ongoing · Expected completion February 2027</p>
+                    <h2>Current Research — MSc Thesis at UCL</h2>
+                    <h3>Uncertainty-Aware Shared Autonomy for Robotic Manipulation</h3></div>
+                    <p>Conducted at University College London as MSc thesis research for Politecnico di Milano.</p>
+                </div>
+                <p class="research-summary">Developing a shared-autonomy research pipeline for learned robotic manipulation. Current work focuses on LIBERO simulation, LeRobot policy integration and reproducible evaluation, while uncertainty-aware intervention and XR-based human corrective demonstrations form the next research stages.</p>
+                <div class="research-work-grid">
+                    <article class="research-work-card"><span class="label">Current implementation</span><ul><li>LIBERO simulation and evaluation environment</li><li>LeRobot-compatible vision and state preprocessing</li><li>π0.5 policy interface, action-chunk execution and experiment logging</li><li>Mock-policy evaluation pipeline, configuration and tests</li><li>Checkpoint available; inference in the integrated pipeline awaits suitable GPU access and reproduction</li></ul></article>
+                    <article class="research-work-card research-planned"><span class="label">Planned research contributions</span><ul><li>Gaussian Process uncertainty estimation</li><li>Detecting uncertain states and deciding when to request help</li><li>XR corrective demonstrations and human-guided recovery</li><li>Evaluating effects on uncertainty estimates and robot behaviour</li></ul></article>
+                </div>
+                <p class="research-caveat">A separate earlier NVIDIA setup ran a small pretrained VLA episode; it is not a benchmark or evidence of an integrated thesis rollout. An independent scripted Franka hover pilot is also separate from VLA execution.</p>
+                <a href="https://github.com/Jess-Dichakdjian/shared-autonomy-robot-learning" class="text-link" target="_blank" rel="noopener noreferrer">View thesis repository</a>
+            </div>
+        </section>
+
+        <!-- MORE PROJECTS -->
+        <section id="more-projects" class="section">
+            <div class="container">
+                <h2>More Robotics Projects</h2>
+                <p class="section-intro">Further work across assist-as-needed control, soft robotics and a completed undergraduate thesis.</p>
+
+                <details class="more-projects-disclosure" open>
                     <summary class="more-projects-summary">
                         <div class="more-projects-summary-copy">
                             <span class="more-projects-kicker">More Robotics Work</span>
-                            <strong>Explore 4 additional robotics projects</strong>
-                            <p>HRI · control · soft robotics · bioinspired robotics · mechanical design</p>
+                            <strong>Explore 3 additional robotics projects</strong>
+                            <p>HRI · assist-as-needed control · soft robotics · embedded prototyping</p>
                         </div>
                         <span class="more-projects-toggle" aria-hidden="true">
                             <span class="more-projects-toggle-open">Explore projects ↓</span>
@@ -286,8 +307,7 @@
                             <div class="project-grid-eyebrow">HRI · Control</div>
                             <h3>EduExo Brick Breaker</h3>
                             <p class="project-grid-summary">
-                                Individually redeveloped an EduExo–Unity platform with active transparent
-                                control, assist-as-needed support, real-time feedback, and automatic logging.
+                                Individually redeveloped an EduExo–Unity platform with assist-as-needed control, feedback and trial logging, evaluated with two healthy participants.
                             </p>
 
                             <div class="project-metrics">
@@ -308,39 +328,6 @@
                         </div>
                     </article>
 
-                    <!-- PHOENIX -->
-                    <article class="project-grid-card project-grid-card-compact">
-                        <div class="project-grid-media">
-                            <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/bioinspired-robotic-fish/main/P.H.O.E.N.I.X_Media/P.H.O.E.N.I.X_Testing_Videos/water_submersion_leak_test.jpeg" alt="PHOENIX bioinspired robotic fish during water testing" loading="lazy" />
-                        </div>
-
-                        <div class="project-grid-body">
-                            <div class="project-grid-eyebrow">Bioinspired Robotics</div>
-                            <h3>PHOENIX Robotic Fish</h3>
-                            <p class="project-grid-summary">
-                                Built and tested a waterproof mackerel-inspired robot with segmented tail
-                                propulsion, PID speed control, IMU stabilization, and in-water validation.
-                            </p>
-
-                            <div class="project-metrics">
-                                <span><strong>0.33 m/s</strong> speed</span>
-                                <span><strong>0.73 BL/s</strong></span>
-                                <span><strong>1.38 N</strong> peak load</span>
-                            </div>
-
-                            <ul class="project-grid-tags">
-                                <li>Mechanical Design</li>
-                                <li>Arduino</li>
-                                <li>PID</li>
-                                <li>IMU</li>
-                            </ul>
-
-                            <div class="project-grid-actions">
-                                <a href="https://github.com/Jess-Dichakdjian/bioinspired-robotic-fish" class="text-link" target="_blank" rel="noopener noreferrer">View project</a>
-                            </div>
-                        </div>
-                    </article>
-
                     <!-- Soft Gripper -->
                     <article class="project-grid-card project-grid-card-compact">
                         <div class="project-grid-media">
@@ -350,14 +337,14 @@
                         <div class="project-grid-body">
                             <div class="project-grid-eyebrow">Soft Robotics · Mechanical Design</div>
                             <h3>Tendon-Driven Soft Gripper</h3>
+                            <div class="project-grid-eyebrow">Completed Academic Project · Physical Prototype · Team</div>
                             <p class="project-grid-summary">
-                                Three-finger compliant gripper using antagonistic tendons, suction-assisted
-                                grasping, pressure sensing, silicone molding, and rapid prototyping.
+                                Contributed to a three-finger soft gripper with antagonistic tendons, suction assistance and pressure sensing. The team tested adaptive grasps, including submerged-object retrieval.
                             </p>
 
                             <div class="project-metrics">
                                 <span><strong>3-finger</strong> compliant design</span>
-                                <span><strong>Functional</strong> grasp + suction tests</span>
+                        <span><strong>Physical</strong> grasp + suction tests</span>
                             </div>
 
                             <ul class="project-grid-tags">
@@ -419,67 +406,67 @@
                 </p>
 
                 <div class="tiles-grid">
-                    <article class="tile" data-modal-target="#modal-cern">
+                    <article class="tile" tabindex="0" role="button" aria-haspopup="dialog" data-modal-target="#modal-cern">
                         <div class="tile-logo">
                             <img src="images/Cern.png" alt="CERN" />
                         </div>
                         <div class="tile-hover">
                             <h3>CERN Summer Student — ATLAS RPC Prototype Testing</h3>
                             <p>RPC-BIL prototype characterization: 20.7 cm/ns strip-line signal propagation and ~2 cm spatial-resolution upper limit.</p>
-                            <button class="btn small" type="button">Explore</button>
+                            <span class="btn small">Explore</span>
                         </div>
                     </article>
 
-                    <article class="tile" data-modal-target="#modal-jybird">
+                    <article class="tile" tabindex="0" role="button" aria-haspopup="dialog" data-modal-target="#modal-jybird">
                         <div class="tile-logo">
                             <img src="images/Jybird.png" alt="Jybird Communications" />
                         </div>
                         <div class="tile-hover">
                             <h3>Front-End / Interface Development</h3>
                             <p>Responsive React interfaces and user-facing interaction flows.</p>
-                            <button class="btn small" type="button">Explore</button>
+                            <span class="btn small">Explore</span>
                         </div>
                     </article>
 
-                    <article class="tile" data-modal-target="#modal-thermorex">
+                    <article class="tile" tabindex="0" role="button" aria-haspopup="dialog" data-modal-target="#modal-thermorex">
                         <div class="tile-logo">
                             <img src="images/Thermorex.png" alt="Thermorex" />
                         </div>
                         <div class="tile-hover">
                             <h3>Sensor Testing Intern</h3>
                             <p>Testing sensors and control-related components under industrial conditions.</p>
-                            <button class="btn small" type="button">Explore</button>
+                            <span class="btn small">Explore</span>
                         </div>
                     </article>
 
-                    <article class="tile" data-modal-target="#modal-kasa">
+                    <article class="tile" tabindex="0" role="button" aria-haspopup="dialog" data-modal-target="#modal-kasa">
                         <div class="tile-logo">
                             <img src="images/KASA.png" alt="KASA Fondation Humanitaire" />
                         </div>
                         <div class="tile-hover">
                             <h3>Human-Centered Communication Support</h3>
                             <p>Multilingual community-facing communication and accessibility-focused support.</p>
-                            <button class="btn small" type="button">Explore</button>
+                            <span class="btn small">Explore</span>
                         </div>
                     </article>
 
-                    <article class="tile" data-modal-target="#modal-kooyrigs">
+                    <article class="tile" tabindex="0" role="button" aria-haspopup="dialog" data-modal-target="#modal-kooyrigs">
                         <div class="tile-logo">
                             <img src="images/Kooyrigs.png" alt="Kooyrigs" />
                         </div>
                         <div class="tile-hover">
                             <h3>Community Outreach &amp; Educational Support</h3>
                             <p>Outreach and educational support work centered on socially relevant technology.</p>
-                            <button class="btn small" type="button">Explore</button>
+                            <span class="btn small">Explore</span>
                         </div>
                     </article>
                 </div>
             </div>
 
-            <div class="modal" id="modal-cern">
+            <div class="modal" id="modal-cern" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-cern-title">
                 <div class="modal-content">
-                    <button class="modal-close" type="button">&times;</button>
-                    <h3>CERN Summer Student — ATLAS RPC Prototype Testing</h3>
+                    <button class="modal-close" type="button" aria-label="Close dialog">&times;</button>
+                    <h3 id="modal-cern-title">CERN Summer Student — ATLAS RPC Prototype Testing</h3>
                     <p class="modal-meta">CERN · ATLAS Muon Spectrometer · 2023</p>
                     <p>
                         Tested the first RPC-BIL prototype in preparation for the Mechanics Final Design Review,
@@ -551,7 +538,7 @@
         <section id="education" class="section">
             <div class="container">
                 <h2>Education &amp; Selected Training</h2>
-        
+
                 <div class="timeline">
                     <!-- 1 -->
                     <article class="timeline-item left">
@@ -575,7 +562,7 @@
                             </div>
                         </div>
                     </article>
-        
+
                     <!-- 2 -->
                     <article class="timeline-item right">
                         <div class="timeline-node">
@@ -598,7 +585,7 @@
                             </div>
                         </div>
                     </article>
-        
+
                     <!-- 3 -->
                     <article class="timeline-item left">
                         <div class="timeline-node">
@@ -621,7 +608,7 @@
                             </div>
                         </div>
                     </article>
-        
+
                     <!-- 4 -->
                     <article class="timeline-item right">
                         <div class="timeline-node">
@@ -643,7 +630,7 @@
                             </div>
                         </div>
                     </article>
-        
+
                     <!-- 5 -->
                     <article class="timeline-item left">
                         <div class="timeline-node">
@@ -668,7 +655,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- SKILLS -->
         <section id="skills" class="section section-alt">
             <div class="container">
@@ -701,10 +688,9 @@
                             </div>
                             <div class="skill-flip-face skill-flip-back">
                                 <h3>Robot Learning · Current Research</h3>
-                                <p class="skill-tools">PyTorch · VLA Models · Diffusion Policies · Gaussian Processes</p>
+                                <p class="skill-tools">PyTorch · LeRobot · pretrained VLA integration (current research)</p>
                                 <p>
-                                    Active MSc thesis work integrating and evaluating learned manipulation
-                                    policies and uncertainty-aware intervention in MuJoCo.
+                                    Current work focuses on simulation, policy integration and evaluation. Uncertainty estimation and XR correction remain planned research.
                                 </p>
                             </div>
                         </div>
@@ -718,7 +704,7 @@
                             </div>
                             <div class="skill-flip-face skill-flip-back">
                                 <h3>Robotics Software &amp; Simulation</h3>
-                                <p class="skill-tools">ROS · MoveIt · MuJoCo · Unity · Simscape</p>
+                                <p class="skill-tools">Linux · ROS · MoveIt · MuJoCo · Unity · Simscape</p>
                                 <p>Robot models, kinematics, simulation, motion planning, teleoperation pipelines, and hardware/software integration.</p>
                             </div>
                         </div>
@@ -747,7 +733,7 @@
                             <div class="skill-flip-face skill-flip-back">
                                 <h3>XR &amp; Human-in-the-Loop Robotics</h3>
                                 <p class="skill-tools">Unity · Meta Quest · Teleoperation · Shared Autonomy</p>
-                                <p>Operator interfaces, XR tracking, corrective demonstrations, assist-as-needed systems, and intuitive robot control.</p>
+                                <p>Completed XR teleoperation experience with Quest tracking; thesis corrective demonstrations are a planned next stage.</p>
                             </div>
                         </div>
                     </article>
@@ -781,7 +767,7 @@
                     <div>
                         <ul class="contact-list">
                             <li><strong>Email:</strong> <a href="mailto:jessicadichakdjian@gmail.com">jessicadichakdjian@gmail.com</a></li>
-                            <li><strong>Phone:</strong> <a href="tel:+393514202953">+44 7747 912597 </a></li>
+                            <li><strong>Phone:</strong> <a href="tel:+447747912597">+44 7747 912597</a></li>
                             <li><strong>GitHub:</strong> <a href="https://github.com/jess-dichakdjian" target="_blank" rel="noopener noreferrer">github.com/jess-dichakdjian</a></li>
                             <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jessica-dichakdjian" target="_blank" rel="noopener noreferrer">linkedin.com/in/jessica-dichakdjian</a></li>
                             <li><strong>Location:</strong> London, UK</li>
@@ -802,26 +788,48 @@
     <footer class="site-footer">
         <div class="container footer-content">
             <span>&copy; <span id="year"></span> Jessica Dichakdjian</span>
-            <span>Built with HTML &amp; CSS · Accent color: #206A73</span>
+    <span>Built with HTML, CSS &amp; JavaScript</span>
         </div>
     </footer>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-    
+
         const tiles = document.querySelectorAll("[data-modal-target]");
         const modals = document.querySelectorAll(".modal");
-    
+        let lastModalTrigger = null;
+
+        modals.forEach((modal) => {
+            modal.setAttribute("role", "dialog");
+            modal.setAttribute("aria-modal", "true");
+            modal.setAttribute("aria-hidden", "true");
+            const heading = modal.querySelector("h3");
+            if (heading) {
+                if (!heading.id) heading.id = `${modal.id}-title`;
+                modal.setAttribute("aria-labelledby", heading.id);
+            }
+            const close = modal.querySelector(".modal-close");
+            if (close) close.setAttribute("aria-label", "Close dialog");
+        });
+
         tiles.forEach(tile => {
-            tile.addEventListener("click", () => {
+            const openModal = () => {
+                lastModalTrigger = tile;
                 const target = tile.getAttribute("data-modal-target");
                 const modal = document.querySelector(target);
                 if (modal) {
                     modal.classList.add("active");
+                    modal.setAttribute("aria-hidden", "false");
+                    const closeButton = modal.querySelector(".modal-close");
+                    if (closeButton) closeButton.focus();
                 }
+            };
+            tile.addEventListener("click", openModal);
+            tile.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") { event.preventDefault(); openModal(); }
             });
         });
-    
+
         modals.forEach(modal => {
             modal.addEventListener("click", (e) => {
                 if (
@@ -829,62 +837,83 @@
                     e.target.classList.contains("modal-close")
                 ) {
                     modal.classList.remove("active");
+                    modal.setAttribute("aria-hidden", "true");
+                    if (lastModalTrigger) lastModalTrigger.focus();
                 }
             });
         });
-    
+
+        document.addEventListener("keydown", (event) => {
+            const activeModal = document.querySelector(".modal.active");
+            if (event.key === "Escape") {
+                document.querySelectorAll(".modal.active").forEach((modal) => {
+                    modal.classList.remove("active");
+                    modal.setAttribute("aria-hidden", "true");
+                    if (lastModalTrigger) lastModalTrigger.focus();
+                });
+            } else if (event.key === "Tab" && activeModal) {
+                const focusable = Array.from(activeModal.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+                if (focusable.length) {
+                    const first = focusable[0];
+                    const last = focusable[focusable.length - 1];
+                    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+                    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+                }
+            }
+        });
+
         /* Projects slider */
         const track = document.querySelector(".projects-track");
         const slides = Array.from(document.querySelectorAll(".project-slide"));
         const prevBtn = document.querySelector(".slider-btn-prev");
         const nextBtn = document.querySelector(".slider-btn-next");
         const viewport = document.querySelector(".projects-viewport");
-    
+
         let activeIndex = 0;
-    
+
         if (slides.length && track && viewport && prevBtn && nextBtn) {
             if (activeIndex >= slides.length) {
                 activeIndex = 0;
             }
-    
+
             function updateSlider() {
                 slides.forEach((slide, index) => {
                     slide.classList.toggle("is-active", index === activeIndex);
                 });
-    
+
                 const activeSlide = slides[activeIndex];
                 const viewportWidth = viewport.offsetWidth;
                 const slideLeft = activeSlide.offsetLeft;
                 const slideWidth = activeSlide.offsetWidth;
-    
+
                 const targetX = slideLeft - (viewportWidth / 2) + (slideWidth / 2);
                 track.style.transform = `translateX(${-targetX}px)`;
             }
-    
+
             prevBtn.addEventListener("click", () => {
                 activeIndex = (activeIndex - 1 + slides.length) % slides.length;
                 updateSlider();
             });
-    
+
             nextBtn.addEventListener("click", () => {
                 activeIndex = (activeIndex + 1) % slides.length;
                 updateSlider();
             });
-    
+
             window.addEventListener("resize", updateSlider);
             window.addEventListener("load", updateSlider);
-    
+
             updateSlider();
         }
     </script>
     <script>
         const skillCards = document.querySelectorAll(".skill-flip-card");
-    
+
         skillCards.forEach((card) => {
             card.addEventListener("click", () => {
                 card.classList.toggle("is-flipped");
             });
-    
+
             card.addEventListener("keydown", (e) => {
                 if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault();

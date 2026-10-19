@@ -2580,6 +2580,18 @@ h1, h2, h3, .hero-role, .timeline-card h3 { color: var(--text); }
     .hero-actions-modern { flex-wrap: wrap; }
     .site-footer .footer-content { gap: .4rem; }
 }
+@media (min-width: 1001px) {
+    .hero-2026 { padding: 3.8rem 0 3.2rem; }
+    .hero-modern-grid {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+        gap: clamp(2rem, 4vw, 4rem);
+    }
+    .hero-media-grid {
+        width: min(100%, 460px);
+        justify-self: end;
+        gap: .8rem;
+    }
+}
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

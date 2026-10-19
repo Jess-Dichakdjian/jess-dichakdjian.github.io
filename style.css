@@ -2505,7 +2505,12 @@ html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
 body { background: var(--bg); color: var(--text); }
 .site-header { background: rgba(16, 26, 36, 0.96); border-bottom: 1px solid var(--border-subtle); box-shadow: 0 8px 24px rgba(0,0,0,.16); }
 .main-nav a, .logo a { color: var(--text); }
+.logo a { background: var(--card-bg); color: var(--accent-hover); border-color: var(--accent); }
+.mobile-nav-toggle { background: var(--card-bg); border-color: var(--accent); }
+.mobile-nav-toggle span { background: var(--accent-hover); }
 .main-nav a:hover, .main-nav a:focus-visible { color: var(--accent-hover); }
+.main-nav .nav-cta, .main-nav .nav-cta:hover { color: #101A24; background: var(--accent); border-color: var(--accent); }
+.main-nav .nav-cta:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
 .main-nav a:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible, .tile:focus-visible, .skill-flip-card:focus-visible { outline: 3px solid var(--accent-hover); outline-offset: 4px; }
 .hero, .section { background: var(--bg); }
 .section-alt { background: var(--bg-alt); }
@@ -2524,6 +2529,8 @@ h1, h2, h3, .hero-role, .timeline-card h3 { color: var(--text); }
 .project-grid-card-featured .project-grid-media { min-height: 0; aspect-ratio: 16 / 9; }
 .project-grid-eyebrow, .eyebrow, .label, .research-label { color: var(--accent-hover); }
 .project-grid-tags li, .research-status span { color: var(--accent-hover); background: var(--accent-soft); border: 1px solid rgba(111,174,169,.25); }
+.project-metrics span, .project-grid-card:hover .project-metrics span { color: var(--text); background: #233544; border: 1px solid #52697A; }
+.project-metrics strong, .project-grid-card:hover .project-metrics strong { color: var(--accent-hover); }
 .project-status-note, .research-caveat { color: var(--muted); font-size: .88rem; line-height: 1.55; }
 .project-status-note { margin: -.25rem 0 .8rem; }
 .btn, .nav-cta, .more-projects-toggle { color: var(--text); border-color: var(--accent); }
@@ -2534,8 +2541,9 @@ h1, h2, h3, .hero-role, .timeline-card h3 { color: var(--text); }
 .text-link, .contact-list a { color: var(--accent-hover); }
 .text-link:hover, .contact-list a:hover { color: var(--text); }
 .more-projects-summary:hover, .more-projects-panel { background: var(--bg); }
-.timeline::before, .timeline-node { background: var(--accent); }
-.timeline-logo { background: var(--bg-alt); border-color: var(--border-subtle); }
+.timeline::before { background: var(--accent); }
+.timeline-node { background: transparent; }
+.timeline-logo { background: #FFFFFF; border-color: #FFFFFF; color: #101A24; }
 .skill-flip-face { backface-visibility: hidden; }
 .skill-flip-face h3, .skill-tools { color: var(--text); }
 .skill-flip-face p { color: var(--muted); }
@@ -2556,7 +2564,6 @@ h1, h2, h3, .hero-role, .timeline-card h3 { color: var(--text); }
 .research-work-card li { margin: .5rem 0; }
 .research-planned { background: #17232e; }
 .research-caveat { font-size: .82rem; }
-.mobile-nav-toggle span { background: var(--text); }
 .tile { cursor: pointer; }
 .tile .tile-logo, .tile .card-media { background: var(--card-bg); }
 .tile:focus-visible .tile-hover { opacity: 1; }

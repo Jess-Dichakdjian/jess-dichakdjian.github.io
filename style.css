@@ -2592,6 +2592,35 @@ h1, h2, h3, .hero-role, .timeline-card h3 { color: var(--text); }
         gap: .8rem;
     }
 }
+
+/* Let project media reveal its complete image on hover without cropping. */
+@media (hover: hover) and (pointer: fine) {
+    .project-grid-card:has(.project-grid-media img):hover {
+        position: relative;
+        z-index: 2;
+    }
+
+    .project-grid-card-featured:has(.project-grid-media img):hover,
+    .project-grid-card-compact:has(.project-grid-media img):hover {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-grid-card:has(.project-grid-media img):hover .project-grid-media {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: auto;
+        overflow: visible;
+    }
+
+    .project-grid-card:has(.project-grid-media img):hover .project-grid-media img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: contain;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

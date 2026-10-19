@@ -146,7 +146,7 @@
                 <div class="featured-projects-grid">
                     <!-- Ego2Robot -->
                     <article class="project-grid-card project-grid-card-featured">
-                        <div class="project-grid-media">
+                        <div class="project-grid-media project-image-trigger" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project media in full size">
                             <img src="images/ego2robot-phone-panda.gif" alt="Phone-recorded pick-and-place demonstration shown beside a simulated Panda robot in LIBERO" fetchpriority="high" decoding="async" />
                         </div>
 
@@ -174,7 +174,7 @@
 
                     <!-- XR Teleoperation -->
                     <article class="project-grid-card project-grid-card-featured">
-                        <div class="project-grid-media">
+                        <div class="project-grid-media project-image-trigger" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project media in full size">
                             <img src="images/xr.gif" alt="XR teleoperation of a physical Braccio robot" loading="lazy" decoding="async" />
                         </div>
 
@@ -208,7 +208,7 @@
 
                     <!-- Industrial Robotics -->
                     <article class="project-grid-card project-grid-card-featured">
-                        <div class="project-grid-media">
+                        <div class="project-grid-media project-image-trigger" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project media in full size">
                             <img src="images/matlab.gif" alt="4-DOF industrial robotics MATLAB and Simscape project" loading="lazy" decoding="async" />
                         </div>
 
@@ -240,7 +240,7 @@
 
                     <!-- PHOENIX -->
                     <article class="project-grid-card project-grid-card-featured">
-                        <div class="project-grid-media">
+                        <div class="project-grid-media project-image-trigger" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project media in full size">
                             <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/bioinspired-robotic-fish/main/P.H.O.E.N.I.X_Media/P.H.O.E.N.I.X_Testing_Videos/water_submersion_leak_test.jpeg" alt="PHOENIX bioinspired robotic fish during water testing" loading="lazy" decoding="async" />
                         </div>
                         <div class="project-grid-body">
@@ -280,7 +280,7 @@
                         <div class="secondary-projects-grid">
                     <!-- EduExo -->
                     <article class="project-grid-card project-grid-card-compact">
-                        <div class="project-grid-media">
+                        <div class="project-grid-media project-image-trigger" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project media in full size">
                             <img src="images/braccio.gif" alt="EduExo controlling a Unity Brick Breaker rehabilitation exergame" loading="lazy" decoding="async" />
                         </div>
 
@@ -311,7 +311,7 @@
 
                     <!-- Soft Gripper -->
                     <article class="project-grid-card project-grid-card-compact">
-                        <div class="project-grid-media">
+                        <div class="project-grid-media project-image-trigger" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project media in full size">
                             <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/tendon-driven-soft-gripper/main/media/prototype/final%20gripper%20cad.png" alt="Tendon-driven soft robotic gripper CAD" loading="lazy" />
                         </div>
 
@@ -342,7 +342,7 @@
 
                     <!-- BSc Thesis -->
                     <article class="project-grid-card project-grid-card-compact">
-                        <div class="project-grid-media">
+                        <div class="project-grid-media project-image-trigger" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project media in full size">
                             <img src="https://raw.githubusercontent.com/Jess-Dichakdjian/sign-language-robotic-hand/main/media/prototype/final_prototype.jpg" alt="Sign-language educational robotic hand prototype" loading="lazy" />
                         </div>
 
@@ -792,8 +792,53 @@
         </div>
     </footer>
 
+    <div class="project-image-lightbox" role="dialog" aria-modal="true" aria-label="Project media full size" aria-hidden="true" tabindex="-1">
+        <img class="project-image-lightbox-content" alt="" />
+    </div>
+
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        const projectImageLightbox = document.querySelector(".project-image-lightbox");
+        const projectImageLightboxContent = projectImageLightbox.querySelector(".project-image-lightbox-content");
+        let lastProjectImageTrigger = null;
+
+        function closeProjectImageLightbox() {
+            projectImageLightbox.classList.remove("active");
+            projectImageLightbox.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("project-image-lightbox-open");
+            projectImageLightboxContent.removeAttribute("src");
+            if (lastProjectImageTrigger) lastProjectImageTrigger.focus();
+        }
+
+        document.querySelectorAll(".project-image-trigger").forEach((trigger) => {
+            const openProjectImageLightbox = () => {
+                const image = trigger.querySelector("img");
+                if (!image) return;
+                lastProjectImageTrigger = trigger;
+                projectImageLightboxContent.src = image.currentSrc || image.src;
+                projectImageLightboxContent.alt = image.alt;
+                projectImageLightbox.classList.add("active");
+                projectImageLightbox.setAttribute("aria-hidden", "false");
+                document.body.classList.add("project-image-lightbox-open");
+                projectImageLightbox.focus();
+            };
+
+            trigger.addEventListener("click", openProjectImageLightbox);
+            trigger.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openProjectImageLightbox();
+                }
+            });
+        });
+
+        projectImageLightbox.addEventListener("click", closeProjectImageLightbox);
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && projectImageLightbox.classList.contains("active")) {
+                closeProjectImageLightbox();
+            }
+        });
 
         const tiles = document.querySelectorAll("[data-modal-target]");
         const modals = document.querySelectorAll(".modal");
